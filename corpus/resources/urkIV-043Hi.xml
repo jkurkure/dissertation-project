@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<egyptian
+  creator="Mark-Jan Nederhof"
+  name="Sethe"
+  labelname="Se"
+  created="2020-08-03"
+  modified=""
+  version=""
+  scheme=""
+  language=""
+  upload=""
+  email=""
+  password=""
+>
+<header>
+<p>
+Transcription of inscription of Wadjemes in Western Thebes, 
+following the transcription of Sethe (1927), number 43 (p. 108).
+</p>
+</header>
+<bibliography>
+<li>
+K. Sethe. <i>Urkunden der 18. Dynastie, Volume I</i>. Hinrichs,
+Leipzig, 1927.
+</li>
+</bibliography>
+<tier name="hieroglyphic" mode="shown"/>
+<tier name="transliteration" mode="ignored"/>
+<tier name="translation" mode="ignored"/>
+<tier name="lexical" mode="ignored"/>
+<segment>
+<texthi>
+<coord id="1"/>[hlr]empty[shade]
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="2"/>[hlr]M23*[sep=0.5]insert[te](G39,Z1)-cartouche(M14*F31*[sep=0.5]S29)-M17*S29-V13[shade]
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="3"/>[hlr]M17-D21-insert[b](F20:.,O49:[sep=0.5]X1*Z1)-G47-X1:Z1-M18[t]-[fit,t]empty[height=0.5,shade]:[sep=0.5]D54-Aa15:[sep=0.5]R4-M17*[sep=0.5]G43[shade]-[shade]I9[shade]
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="4"/>[hlr]D4:I9-X1:I9-Y5:N35-D36:Z4*D27-N35-M23*F31*(Z1:[sep=0.5]Z1:[sep=0.5]Z1)-N35-(M23:X1[shade])*[bsb,beb](L2:X1[shade])
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="5"/>[hlr]cartouche(N5:O29-[sep=0.5]L1-[sep=0.5]D28[shade])-N35-O29:X1-N35*W14-X1*Z1*Z1*Z1:I9[shade]-empty[shade]
+</texthi>
+</segment>
+</egyptian>

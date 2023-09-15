@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<egyptian
+  creator="Mark-Jan Nederhof"
+  name="Sethe"
+  labelname="Se"
+  created="2020-08-03"
+  modified="2020-08-03"
+  version=""
+  scheme=""
+  language=""
+  upload=""
+  email=""
+  password=""
+>
+<header>
+<p>
+Transcription of scenes from the life of priest Amenhotep, at Sheikh
+Abd el-Qurna, following the transcription of Sethe (1927), number 42
+(pp. 107-108).
+</p>
+</header>
+<bibliography>
+<li>
+K. Sethe. <i>Urkunden der 18. Dynastie, Volume I</i>. Hinrichs,
+Leipzig, 1927.
+</li>
+</bibliography>
+<tier name="hieroglyphic" mode="shown"/>
+<tier name="transliteration" mode="ignored"/>
+<tier name="translation" mode="ignored"/>
+<tier name="lexical" mode="ignored"/>
+<segment>
+<texthi>
+<coord id="A1"/>[hlr]D4-[fit]U1-Aa27-insert(I10,X1[shade])-D2:[sep=0.5]Z1[shade]
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="A2"/>[hlr]W25-[sep=0.5]X1*(N42:X1)-B1-I9
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="A3"/>[hlr]F31*[sep=0.5]S29-G43-I9
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="A4"/>[hlr]ra*empty[width=0.5,shade]:[shade]empty[height=0.5,shade]-W3:[sep=0.5]N5*[sep=0.5]empty[width=0.5,shade]-V28*D28
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="A5"/>[hlr]D58*[sep=0.5](W3:ra*empty[width=0.5,shade])-empty[shade]
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="A6"/>[hlr]empty[shade]
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="A7"/>[hlr]M17*S3[shade]-M23*[sep=0.5]insert[t](G39,Z1)-D1:[sep=0.5]Q3-N35-cartouche(N5:[sep=0.5]O29-[sep=0.5]L1-D28)-M17*(Y5:N35)-R4-Aa11:P8[rotate=270]-V30:[sep=0.5]X1:[sep=0.5]O1[shade]-D21:N35-G1-M17*[sep=0.5]M17-![shade]Aa11:[sep=0.5]X1:[sep=0.5]P8[rotate=270]
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B"/>[hlr]S29*Aa1-[sep=0.5]G17-[sep=0.5]Aa1:[sep=0.5]F34-D4-[fit]U1*[sep=0.5]D58-F35-D4-O34-M20-X1*Aa15-D28:X1-M20:[sep=0.5]X1-M17*N35-M20:[sep=0.5]X1-N36-D60*M17-Y5:N35-R4-Aa11[mirror]:P8[rotate=270]
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="C"/>[hlr]S29-Aa1-[sep=0.5]Aa1:[sep=0.2]G17-F34-D4-[fit]U1-[sep=0.5]D58*F35-O42-Q3:[sep=0.5]D40-F40-X1-[fit]G43-X4b-G17-F26:[sep=0.5]N35-(W24[shade]:O1)*O6-X1[shade]:O1-Aa15-O34:[sep=0.5]N35:[sep=0.5]W24[shade]*[sep=0.5](X4b:[sep=0.5]Z1*Z1*Z1)-N35-V30-R8*[sep=0.5]R8*[sep=0.5]R8-D28*Z1[shade]:N35-D60-M17-Y5:N35-R4:[sep=0.5]X1*Q3-Aa11[mirror]:P8[rotate=270]-N41*X1:I9-V30:[sep=0.5]X1:[sep=0.5]O1*Z1-stack[y=0.3](M25,D36)-M17*[sep=0.5](.:t)*[sep=0.5,fit]M17-X1-N35:X1-M17-Y5:N35-A40-D21:N35-G1*M17-[sep=0.5]M17-(Aa11[rotate=270]:[sep=0.5]X1)*P8
+</texthi>
+</segment>
+</egyptian>

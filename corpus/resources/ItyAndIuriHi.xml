@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<egyptian
+  creator="Nederhof"
+  name="Mark-Jan Nederhof"
+  labelname=""
+  created="2016-09-05"
+  modified="2016-09-05"
+  version=""
+  scheme=""
+  language=""
+  upload=""
+  email=""
+  password=""
+>
+<header>
+<p>
+The stela of Ity and Iuri. British Museum EA586.
+</p>
+</header>
+<tier name="hieroglyphic" mode="shown"/>
+<tier name="transliteration" mode="ignored"/>
+<tier name="translation" mode="ignored"/>
+<tier name="lexical" mode="ignored"/>
+<segment>
+<texthi>
+<coord id="1"/>[hrl]rnp*(t:zp)-10:Z15*Z15*Z15*Z15-x:r-Hm-Z1:n-L2a-pt[xscale=2.0]:[size=inf]cartouche(ra-xpr-kA)-anx-insert[b](D,t:N17)-i-imAx:[fit]x-nTr-t-i*ti*i*i-insert[b](D,d:f)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="2"/>[hrl]i-w-wHm*m:n-Hz-z:t-A2-x:r-sw-t:n-s*O29a-ib*Z1:r-i-t:f-A1-Z1:Z1:Z1-xpr:r-w-r:HAt:t-A1-i*w
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="3"/>[hrl]Tz:n:n-A1-Hm-Z1*(x:t):f-insert[te](m,xtm)-O29a-m-H*Hz-z:mn:n:Z2b-wab-mi*[sep=0.5]i-Sps*s-sw*(t:n:nb)-insert[te](A*.,r)-i*i-t:S43-A1
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="4"/>[hrl]m-[fit]hb-n:xt-s-wab*t-m-S40*m:nbw:Z2b-i*(imAx:[fit]x)-[sep=0.8,fit]nTr-t-i*ti*i*i
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="5"/>[hrl]N42*t:f-U6a-r:t:f-i*w-r*i
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="6"/>[vlr]zA:[sep=0.4]f-ini:n-t:f
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="7"/>[hlr]zA:[sep=0.5,fit]f-i-mn:n-m-HAt:t
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="8"/>[vrl]i*(imAx:[fit]x)-nTr*t:[fit]f-nb:Z1:[fit]f-(U7:i*i)*(mA*[fit](mAa:.):a)-Hr:r-z:S:N16
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="9"/>[vrl]mDAt:n-i*(mn:n)-(ra:Z1)*A40-m-st*(t:pr)-f:nb-i*ti*i*i
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="10"/>[vrl]ms:n-I5a-zA:t-B1
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="11"/>[hlr]zA:[sep=0.5].*t:[sep=0.4,fit]f-I5a-insert[te](zA,t)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="12"/>[vlr]zA:t-f-wsr*s-r:t-zA:t
+</texthi>
+</segment>
+</egyptian>

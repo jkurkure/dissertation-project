@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<text description="hiero; eng; translit">
+<primary language="eng" name="Intef son of Senet, Stela of"/>
+<collection kind="books" collect="Sethe, Ägyptische Lesestücke"
+    section="20"/>
+<collection kind="museums" collect="British"
+    section="EA581"/>
+<resource location="../resources/IntefSonSenetTr.txt"/>
+<resource location="../resources/IntefSonSenetHi.xml"/>
+</text>
