@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<egyptian
+  creator="Mark-Jan Nederhof"
+  name="Sethe"
+  labelname="Se"
+  created="2018-07-11"
+  modified="2018-07-12"
+  version=""
+  scheme=""
+  language=""
+  upload=""
+  email=""
+  password=""
+>
+<header>
+<p>
+Transcription of the obelisk of Tuthmosis I in the temple of Amun in
+Karnak, following the transcription of Sethe (1927), number 38 (pp.
+92-94).
+</p>
+</header>
+<bibliography>
+<li>
+K. Sethe. <i>Urkunden der 18. Dynastie, Volume I</i>. Hinrichs,
+Leipzig, 1927.
+</li>
+</bibliography>
+<tier name="hieroglyphic" mode="shown"/>
+<tier name="transliteration" mode="ignored"/>
+<tier name="translation" mode="ignored"/>
+<tier name="lexical" mode="ignored"/>
+<segment>
+<texthi>
+<coord id="A"/>[hlr]G5-serekh(E1*[sep=0.5]D40-C10*[sep=0.5]U6)-(M23:X1)*(L2:X1)-cartouche((N5:[sep=0.5]O29)*L1-D28*M17-(Y5:[sep=0.5]N35)*[sep=0.5]D17)-D4:[sep=0.5]N35:[sep=0.5]I9-G17-Y5:W24*[sep=0.5]W24*[sep=0.5]W24-I9-N35-X1:I9-M17-Y5:[sep=0.5]N35:[sep=0.5]N5*Z1-D2:[sep=0.5]D1-.:N17:N17:.-S29*P6-N35:I9-O25*[sep=0.5]O25-G36:[sep=0.5,fit]G36-D21-O32-O32-R8*O6-D58[scale=0.8]*[sep=0.5]D58[scale=0.8]:[sep=0.3]empty[width=0.4,height=0.0,tee]*[t](n[shade]:[sep=0.1,shade]t)-G17-![shade]S40*(S12:N33*N33*N33)-empty[shade]
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B"/>[hlr]G5-serekh(E1-D40-N35*(N5:Z1)-A40)-G16-V15*(N17:[sep=0.5]N17:[sep=0.5]N17)-V30-G8-V28*A24-T10:[sep=0.5].*Z15*Z15*Z15*.:[sep=0.5]Z15*Z15*Z15*[sep=2.0]Z15*Z15*Z15-(M23:X1)*(L2:X1)-V30:N17:N17-cartouche(N5:O29-[sep=0.5]L1-D28*N5-U7:N35)-S29*D45-[sep=0.5]N35-N35:I9-V30*R8-[sep=0.5]R8*[sep=0.5]R8-O23-W4-(D2:[sep=0.5]Z1)*M17-(N37:D46)*M1-[sep=0.5]A51-insert[te](G39,N5)-cartouche(G26*[sep=0.5](F31:[sep=0.5]O34)-[sep=0.5]N28-N5*[sep=0.5]W19)-M17*(Y5:[sep=0.5]N35:[sep=0.5]N5*Z1)-D28:[sep=0.5]D52-E1-X1-[fit]G14-I9*U6-M17[shade]*M17-![shade]X8*[sep=0.5]S34-insert[bs](I10,X1:N17)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="C"/>[hlr]G5-serekh(E1*[sep=0.5]D40-C10a*[sep=0.5]U6)-(M23:X1)*(L2:X1)-G16-N28-[sep=0.5]G17-N35:[sep=0.5]O34:[sep=0.5]D21:[sep=0.5]X1-O29-F9*F9-cartouche(N5:[sep=0.5]O29-L1-D28*N5-U21:[sep=0.5]N35)-G8-F35*M4*[sep=0.5]M4-[sep=0.5]M4*S29-S34*F34-F34*F34-insert[te](G39,N5)-N35:[sep=0.5]F32:[sep=0.5]X1:[sep=0.2]I9-cartouche(G26-F31:[sep=0.5]O34-N28-[sep=0.5]F35:[sep=0.5]Z1*Z1*Z1)-D4:[sep=0.5]N35:[sep=0.5]I9-G17-Y5:[sep=0.5]W24*[sep=0.5]W24*[sep=0.5]W24-I9-N35-X1:I9-M17*(Y5:N35)-V30-W11*W11:W11-.:N17:N17:.-W17-X1-M17*(Q3:X1)-Q1*[sep=0.5]Q1*[sep=0.5]Q1-X1:O49-D4:I9-X8-S34-N5*W19-insert[s](I10,X1:[sep=0.5]N17)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="D"/>[hlr]G5-serekh(N5:[sep=0.5]U7-N28-S1)-G16-[sep=0.5]X1:[sep=0.5]U15-[sep=0.5]A51*N14-A30-N28-N28-[sep=0.5]G43-(M23:X1)*(L2:X1)-V30:N17:[sep=0.5]N17-cartouche(N5:[sep=0.5]O29-[sep=0.5]L1-D28-N5-[sep=0.5]D4:N35)-G8-O29-F9-F9-F12-[sep=0.5]S29*[sep=0.5]F23-M13*M4*[sep=0.5]M4-[sep=0.5]M4*G17-O8:X1-[sep=0.5]C10:[sep=0.5]O1-insert[te](G39,N5)-cartouche(G26-F31:[sep=0.5]O34-[sep=0.5]N28*[sep=0.5]N5*W19)-R8*S38-O28*(W24:[sep=0.5]O49)-M17*(Y5:[sep=0.5]N35:[sep=0.5]N5*Z1)-[sep=0.5]A40-V30-(W11:X1)*(W11:W11)-.:N17:N17:.-U6*M17-[sep=0.5]M17*X8-S34-![shade]N5-W19-insert[bs](I10,X1:N17)
+</texthi>
+</segment>
+</egyptian>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<egyptian
+  creator="Mark-Jan Nederhof"
+  name="Sethe"
+  labelname="Se"
+  created="2018-12-01"
+  modified="2018-12-02"
+  version=""
+  scheme=""
+  language=""
+  upload=""
+  email=""
+  password=""
+>
+<header>
+<p>
+Transcription of a fragment from Deir el-Bahari about the elephant
+hunt of Tuthmosis I in Niya, following the transcription of Sethe
+(1927), number 40 (pp. 103-105), but with layout following Naville
+(1898), plate 80.
+</p>
+</header>
+<bibliography>
+<li>
+E. Naville. <i>The temple of Deir el Bahari, Part 3</i>. London, 1898.
+</li>
+<li>
+K. Sethe. <i>Urkunden der 18. Dynastie, Volume I</i>. Hinrichs,
+Leipzig, 1927.
+</li>
+</bibliography>
+<tier name="hieroglyphic" mode="shown"/>
+<tier name="transliteration" mode="ignored"/>
+<tier name="translation" mode="ignored"/>
+<tier name="lexical" mode="ignored"/>
+<segment>
+<texthi>
+<coord id="1"/>[vrl]G30-M23*[sep=0.5](X1:N35)-cartouche[teb,bsb,bse,be](N5:O29-[sep=0.5]L1[b,e]![shade]-D28)-Aa11:P8[rotate=270]-W25:[fit]N35-[sep=0.5]N35:[sep=0.5]I9-[sep=0.5]U23*[sep=0.3](.:D58)-[sep=0.5]G43-[sep=0.5](F18:Z1*Z1*Z1)*M17-[sep=0.5]Q3:N35-![shade]G17-N35:[sep=0.5]M3:[sep=0.5]Aa1*[sep=0.5]X1
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="2"/>[vrl]G43-D40-![shade]I9-(D2:Z1)*(N25:X1*Z1*[sep=0.5]Z1*[sep=0.5]Z1)-M24*[sep=0.5](X1:[sep=0.5]N21:[sep=0.5]Z1*[sep=0.5]Z1*[sep=0.5]Z1)-insert[bs](V22:.,X1*[sep=0.5]t:Z1*Z1*Z1)-![shade]M17*S29*V13-U36*(Z1:[sep=0.5]I9)-insert[b](I10,S29)-[sep=0.5]I9-D58*V28*[sep=0.5]S29-D54-N35:[sep=0.5]I9-empty[shade]-N35
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="3"/>[vrl]U23*[sep=0.5]G43-E26[b]![shade]-G17-N25:X1*Z1-N35:X1-N35:O4-[sep=0.5]G1*(D21:Z4)-N35:[sep=0.5]G1-N25-![shade]M17-[sep=0.5]G43*I9-D2:Z1
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="4"/>[vrl]V28*[sep=0.5](X1:D21)*[fit]M17-[sep=0.5]E6[b]![shade]-I9[shade]-G17*[fit](M3:[sep=0.5]Aa1*[sep=0.5]X1)-[sep=0.5]D54*U28-G43-D54-U36*(Z1:[sep=0.5]I9)-[sep=0.5]D21-S29-[fit]Aa1:D21-[sep=0.5]X1:A15-[sep=0.5]D21:[sep=0.5]V13-[sep=0.5]N35:[sep=0.5]W24
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="5"/>[vrl]N25-N1:X1-G17[b]![shade]-V25*[sep=0.5]M17*[sep=0.5]M17-X1*[sep=0.5]D54:I9-empty[shade]-N35:X1-N35:[sep=0.5]M3:[sep=0.5]Aa1*X1-[sep=0.5]D40-![shade]N12:[sep=0.5]D21:[sep=0.5]D54-U36*[sep=0.5](Z1:[sep=0.5]I9)-D21-N25:X1*Z1
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="6"/>[vrl]N35:X1:N35:Z4-M17[b]*[sep=0.5,b]M17[b]![shade]-N25[shade]-G28-N35:[sep=0.5]I9-[sep=0.5]M22*[sep=0.5]M22:[sep=0.5]N35-[sep=0.5]U23*[sep=0.5,fit](.:D58)-[sep=0.5]G43-[sep=0.5]E26:[sep=0.5]Z1*Z1*Z1-M17*[sep=0.5]G17-![shade]D35:[sep=0.5]O34:[sep=0.5]Q3*O50-L1*W19-(X1:X1)*N35
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="7"/>[vrl]M23*M17*[sep=0.5]M17-G43![shade]-A44-[sep=0.5](Z1:[sep=0.5]Z1:[sep=0.5]Z1)*(D1*[sep=0.5]Q3:[sep=0.5]D36)-A51*(Z1:[sep=0.5]Z1:[sep=0.5]Z1)-![shade]M17*[sep=0.5]S29-[sep=0.5]V13-M17*D21-M22*[sep=0.5]M22:[sep=0.5]N35-U23*[sep=0.5](.:D58)-[sep=0.5]G43-F18:[sep=0.5]Z1*Z1*Z1-W25-N35:[fit]N35
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="8"/>[vrl]U36*[sep=0.5](Z1:[sep=0.5]I9)-G17[b]![shade]-N25:[sep=0.5]X1*Z1-[sep=0.5]V13:[sep=0.5]N35-![shade]D21:[sep=0.5]D37-N35:[sep=0.5]I9-O34:[sep=0.5]X1-D21-O1:[sep=0.5]Z1-X1:[sep=0.5]I9-[sep=0.5]M17-[sep=0.5]Y5:N35-V30-[sep=0.5]W11:[sep=0.5,size=inf]W11*[sep=0.5]W11-.:N17:[sep=0.5]N17:.-![shade]G17-M3:[sep=0.5]Aa1*[sep=0.5]X1-[sep=0.5]D54
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="9"/>[vrl]D54*[fit]G43-I9-G17[b]![shade]-F12-[fit]S29-[sep=0.5]D21:[sep=0.5]D40-G17-N35:[sep=0.5]M3:[sep=0.5]Aa1*[sep=0.5]X1-[fit]D40-[sep=0.5]G17-Aa11[rotate=270]*[sep=0.5]P8-![shade]S29*[fit](Aa1:D21)-[sep=0.5]A15-[sep=0.5]N35:I9-Aa1*[sep=0.5]X1:I9-[sep=0.5]A14-Z1*Z1*Z1:[sep=0.5]I9
+</texthi>
+</segment>
+</egyptian>

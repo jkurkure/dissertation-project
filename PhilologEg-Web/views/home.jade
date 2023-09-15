@@ -1,0 +1,66 @@
+script.
+   localStorage.setItem("path", "https://jkurkure.github.io/");
+
+button Open
+button PDF
+button Help
+
+div#nav
+      ul
+        li 
+          if(currentURL == '/home/')
+            a(href='/home/').current Texts
+          else
+            a(href='/home/') Texts
+        li
+          if(currentURL == '/books/')
+             a(href='/books/').current Books
+          else
+             a(href='/books/') Books
+        li
+          if(currentURL == '/kings/')
+             a(href='/kings/').current Kings 
+          else
+             a(href='/kings/') Kings
+
+        li
+          if(currentURL == '/museums/')
+             a(href='/museums/').current Museums 
+          else
+             a(href='/museums/') Museums
+
+        li
+          if(currentURL == '/corpus/')
+             a(href='/corpus/').current Corpus 
+          else
+             a(href='/corpus/') Corpus
+
+if (currentURL == '/home/')
+  a(href='/example-text') The list of texts will appear here 
+  [example]
+  br
+  a(href='/example-text1') And here 
+  [another example]
+
+if (currentURL == '/books/')
+   p The list of books will appear here 
+
+if (currentURL == '/kings/')
+   p The list of kings will appear here
+
+if (currentURL == '/museums/')
+   p The list of museums will appear here
+
+if (currentURL == '/corpus/')
+   \\ three boxes entitled File, Type and Name with content inside
+   table 
+      tr 
+         td File
+         td Type
+         td Name
+      tr
+         td #{path}
+         td sometype
+         td somename
+
+link(rel='stylesheet', href='/stylesheets/tabs.css')

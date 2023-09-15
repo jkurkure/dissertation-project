@@ -1,0 +1,1 @@
+npm install & SET DEBUG=philologegweb:* & npm start

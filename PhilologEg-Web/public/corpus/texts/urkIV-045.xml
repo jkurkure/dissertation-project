@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<text description="hiero; eng; translit">
+<primary language="eng" name="Pa-heri, Commemorative stone at Elkab of"/>
+<collection kind="books" collect="Urkunden der 18. Dynastie"
+    section="45"/>
+<resource location="../resources/urkIV-045Hi.xml"/>
+<resource location="../resources/urkIV-045Tr.txt"/>
+<autoalign
+  location1="../resources/urkIV-045Hi.xml"
+  tier1="hieroglyphic"
+  location2="../resources/urkIV-045Tr.txt"
+  tier2="transliteration"/>
+</text>

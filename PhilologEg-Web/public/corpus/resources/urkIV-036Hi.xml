@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<egyptian
+  creator="Mark-Jan Nederhof"
+  name="Sethe"
+  labelname="Se"
+  created="2018-07-10"
+  modified="2018-07-11"
+  version=""
+  scheme=""
+  language=""
+  upload=""
+  email=""
+  password=""
+>
+<header>
+<p>
+Transcription of an inscription on a stone naos of Amenmose, following
+the transcription of Sethe (1927), number 36 (p. 91).
+</p>
+</header>
+<bibliography>
+<li>
+K. Sethe. <i>Urkunden der 18. Dynastie, Volume I</i>. Hinrichs,
+Leipzig, 1927.
+</li>
+</bibliography>
+<tier name="hieroglyphic" mode="shown"/>
+<tier name="transliteration" mode="ignored"/>
+<tier name="translation" mode="ignored"/>
+<tier name="lexical" mode="ignored"/>
+<segment>
+<texthi>
+<coord id="A"/>[hlr]M4*(X1:O50)-Z15*[sep=0.5]Z15*[sep=0.5]Z15*[sep=0.5]Z15-(Aa1:D21)*U36-A40-N35-(M23:X1[shade])*[bsb,beb](L2:X1[shade])-![shade]V30:[sep=0.5]N17:[sep=0.5]N17![noshade]-[sep=0.5]cartouche(N5:[sep=0.5]O29-[sep=0.5]L1*D28)-insert[te](G39,N5)-N35-[sep=0.5]F32:[sep=0.5]X1:[sep=0.5]I9-[sep=0.5]cartouche(G26-F31*[sep=0.5]S29)-G5-Aa15:N27-U6*M17*[sep=0.5]M17[shade]-X8-[sep=0.5]S34-(N5:[sep=0.5]Z1)*W19-insert[s](I10,X1:N17)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B"/>[hlr]O1:D21-(X1:D54)*Q3-G43-D4:N35-M23-insert[t](G39,Z1)-A19-insert[bs,sep=0.5](F20:.,A12*[sep=0.5](Z1:[sep=0.5]Z1:[sep=0.5]Z1))-A19-S3*[sep=0.5]M17-[sep=0.5]X1:I9-A40-I9-cartouche(M17*(Y5:N35)-F31*[sep=0.5]S29)-S34-[sep=0.5]insert[s](I10,X1:N17)-D21-Aa18:[sep=0.5]Z1-X1*[sep=0.7,fit]G43-(O50:Z4)*D54-(D2:[sep=0.5]Z1)*S29-U28[shade]-D2:[sep=0.5]Z1-![shade]G17-[sep=0.5]insert[be](insert[bs](F29,X1),t)-T11:D40-empty[shade]
+</texthi>
+</segment>
+</egyptian>

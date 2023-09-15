@@ -1,0 +1,986 @@
+creator = Mark-Jan Nederhof
+name = Nederhof
+labelname = Ne
+created = 2020-08-03
+modified = 2020-08-08
+version = 
+scheme = 
+language = eng
+upload = 
+email = 
+password = 
+hieroglyphic = ignored
+transliteration = shown
+translation = shown
+lexical = ignored
+
+Transliteration and translation of the commemorative stone of Pa-heri,
+at Elkab, following the transcription of Sethe (1927), number 45 (pp.
+111-123).
+
+The transliteration throughout follows Hannig (1995).
+
+For published translations, see Sethe (1914), number 45 (pp. 55-61).
+
+###
+
+R. Hannig. <i>Grosses Handwörterbuch Ägyptisch-Deutsch: die Sprache
+der Pharaonen (2800-950 v.Chr.)</i>. Verlag Philipp von Zabern, 1995.
+
+K. Sethe. <i>Urkunden der 18. Dynastie -- übersetzt, Volume I</i>.
+Hinrichs, Leipzig, 1914.
+
+K. Sethe. <i>Urkunden der 18. Dynastie, Volume I</i>. Hinrichs,
+Leipzig, 1927.
+
+###
+
+<1> Htp-Dj-nsw ^jmn
+;
+<1> A royal offering of Amun,
+
+nb ^nswt-tAwj
+;
+lord of the Thrones of the Two Lands,
+
+nsw nHH nb Dt
+;
+king of eternity, lord of everlastingness,
+
+jty nb Swtj wrtj
+;
+sovereign, lord of the Two Great Feathers,
+
+wa jmj-bAH
+;
+the only one who was before,
+
+wr smsw pAwtj ntj [...] nTrw
+;
+oldest of the great, primordial god who [...] gods,
+
+tkA anx
+;
+living flame,
+
+pr m nwn
+;
+who came from the primordial waters,
+
+[Dj] sSp <2> n Hmnnt
+;
+who [gives] light <2> to the sun-folk of Heliopolis,
+
+^nxbt HDt ^nxn
+;
+and Nekhbet, the White One of Hierakonpolis.
+
+nbt pt
+;
+lady of heaven,
+
+Hnwt tAwj
+;
+mistress of the Two Lands,
+
+^wsjr xntj jmntjw
+;
+and Osiris, foremost of those in the west,
+
+nb ^tA-wr
+;
+lord of Tawer,
+
+aA m ^AbDw
+;
+great in Abydos,
+
+^Hwt-^Hr
+;
+and Hathor,
+
+nbt xAst
+;
+mistress of the desert,
+
+wsrt-jb m-m nTrw
+;
+brave among the gods,
+
+^ptH-^skr
+;
+and Ptah-Sokar,
+
+nb ^Stjt
+;
+lord of Shetit,
+
+^jnpw
+;
+and Anubis,
+
+nb ^rA-sTAw
+;
+lord of Rosetau,
+
+psDt-aAt psDt-nDst [...]
+;
+and the great Ennead and the small Ennead, [...]
+
+[Dj=sn] 1000 m t Hnqt kAw Apdw
+;
+[May they give] a thousand of bread and beer, oxen and fowl,
+
+1000 m Htpt DfAw
+;
+a thousand of offerings and sustenance,
+
+1000 m Hnkt rnpt
+;
+a thousand of offerings and vegetables,
+
+<3> rdt nbt Hr sA tA
+;
+<3> all that grows on earth,
+
+1000 m xt nbt nfrt wabt
+;
+a thousand of all good and pure things
+
+mAat m-bAH nb nHH
+;
+that are offered before the lord of eternity.
+
+Ssp snw pr m-bAH
+;
+Receiving offerings that were made,
+
+jrTt prt Hr wdHw
+;
+milk from the offering table,
+
+swr mw bsyw m ^Abw
+;
+drinking water that welled up from Elephantine,
+
+mHy [...]
+;
+which flooded [...]
+
+m Abdwt
+;
+at the monthly festival,
+
+snwt
+;
+the festival of the sixth day,
+
+smdt
+;
+the mid-month festival,
+
+prt aAt
+;
+the great procession,
+
+prt spdt
+;
+the appearance of Sirius,
+
+wAg
+;
+the <al>wAg</al> festival,
+
+[Dhwty]t
+;
+the [Thoth] festival,
+
+mst tp[t]
+;
+the first birth,
+
+mst ^Ast
+;
+the birth of Isis,
+
+prt ^mnw
+;
+the appearance of Min,
+
+prt sm
+;
+the procession of the Sem priests,
+
+jxt-xAwj
+;
+evening offering,
+
+[Ss]pt-jtr<4>w
+;
+start of the river,
+
+Hbw nw pt
+;
+festivals of heaven,
+
+r sw=sn
+;
+at their dates,
+
+m Xrt-hrw nt ra nb
+;
+every day.
+
+arq.tw n=k wabw m pAqt
+;
+You will be dressed in a sacred robe of fine linen,
+
+jrjwj m sfxw Haw-nTr
+;
+belonging to what was taken off from the god's body.
+
+sAsA.tw n=k mDt wabt
+;
+Pure ointment will be applied to you.
+
+swr=k mw Hr spt xAwt
+;
+You will drink water from what is left on the altar.
+
+smA=k xt m-m jrj
+;
+You will partake of the things among them.
+
+saH.tj m tpw Hsyw
+;
+You will be noble among the best of those who are praised.
+
+n kA n HAtj-a n ^nxb
+;
+For the count of Elkab,
+
+sS ^pA-Hrj mAa-xrw
+;
+scribe Pa-heri, justified,
+
+<5> mH-jb mnx n nb=f
+;
+<5> excellent confidant of his lord.
+
+aq=k pr=k jb=k Aw(.w)
+;
+You will go in and go out while your heart is glad,
+
+m Hswt nt nb nTrw
+;
+in the favour of the lord of the gods.
+
+qrst nfrt m-xt jAw jmAx jAwt jj.tj
+;
+A beautiful burial after becoming an honoured elder, old age having
+come.
+
+Xnm=k st=k m nb-anx
+;
+You will take your place in the coffin.
+
+smA=k tA m Hrt jmntt
+;
+You will be buried in the western necropolis.
+
+xpr m bA anxy
+;
+Becoming a living soul,
+
+Hm sxm=f m t Hnqt mw TAw
+;
+which will obtain bread, beer, water, air.
+
+jrt[=f] <6> xprw m bnw mnt
+;
+[His] becoming a <al>bnw</al> heron, a swallow,
+
+m bjk Sntj pw mr=k
+;
+a falcon, or a <al>Sntj</al> heron is as you wish.
+
+DA=k m-a Xnt
+;
+You will cross by ferry,
+
+nn HnHn=k
+;
+without being obstructed.
+
+sqdy=k nwt nwy
+;
+You will sail on the waves of the water.
+
+xpr anx=k m wHm-a
+;
+It will happen that you live again.
+
+nn rwj bA=k r XAt=k
+;
+Your soul will not leave you corpse.
+
+nTrj bA=k Hna Axw
+;
+Your soul will be divine with the spirits.
+
+mdw n=k bAw mnxw
+;
+The excellent souls will speak to you,
+
+<7> sntj=k m-m jrj
+;
+<7> while you are among them,
+
+Hr Ssp DDt tp tA
+;
+while receiving what is given on earth.
+
+sxm=k m mw
+;
+You will obtain water,
+
+tpj TAw
+;
+you will breathe air,
+
+baba=k m xrt-jb=k
+;
+you will drink what you desire,
+
+DD.tw n=k jrtj=kj r jr mAA
+;
+your eyes will be given to you to see,
+
+anxwj=kj r sDm Ddt
+;
+your ears to hear what is spoken.
+
+rA=k Hr mdwt
+;
+Your mouth will speak.
+
+rdwj[=k] Hr Smt
+;
+[Your] legs will walk.
+
+pXr n=k awj=kj rmnwj=kj
+;
+Your forearms and your upper arms will turn for you.
+
+rwD jwf=k
+;
+Your flesh will be firm.
+
+nDm mtw=k
+;
+Your ducts will be hale.
+
+xntS=k m awt nbt
+;
+You will enjoy all your limbs.
+
+<8> jp=k Haw=k tm(.w) wDA.w
+;
+<8> You will confirm your body is complete and well,
+
+nn Dwt jrt=k rA-sj
+;
+without anything wrong with you at all.
+
+jb=k m-a=k n wn-mAa
+;
+You will truly have your heart,
+
+HAtj=k n=k n jmj-HAt
+;
+your heart is yours as before.
+
+pr=k r pt
+;
+You will go to heaven.
+
+wbA[=k dwAt
+;
+[You] will explore [the underworld
+
+m xprw nb mr.n=k
+;
+in any form you wish.]
+
+n]js.tw n=k m Xrt-hrw Hr wdHw n ^wnn-nfr
+;
+You will daily be called to the offering table of Wenennefer.
+
+Ssp=k snw pr m-bAH
+;
+You will receive offerings that were made,
+
+Awt-a n nb tA-Dsr
+;
+and gifts to the lord of the necropolis.
+
+<9> n kA n HAtj-a n ^nxb
+;
+<9> To the count of Elkab,
+
+HAtj-a n ^jwnyt
+;
+count of Esna,
+
+Hsb jt SAa m ^jwnt nfryt r ^nxb
+;
+who counts barley from Dendara to Elkab,
+
+xrp rs-tp
+;
+vigilant leader,
+
+<10> Sw m bAgj
+;
+<10> free from weakness,
+
+sS [^pA-Hrj] mAa-xrw
+;
+scribe [Pa-heri], justified.
+
+wnm=k Sns r-gs nTr
+;
+You will eat bread next to the god
+
+r rdw-wr <11> n nb psDt
+;
+at the Great Stairway <11> of the lord of the Ennead.
+
+wHa=k jm=f r bw Xr=f
+;
+From there you will return to his place
+
+m-qAb DADAt tpt
+;
+within the first judgement hall.
+
+swtwt=k m-m <12> jrj
+;
+You will stroll among <12> them.
+
+xnms=k Smsw-^Hr
+;
+You will befriend the servants of Horus.
+
+pr=k hA=k
+;
+You will ascend and descend
+
+nn HnHn=k
+;
+without being obstructed,
+
+nn <13> Sna=k Hr sbA n dwAt
+;
+without being rejected at the gate of the underworld.
+
+wn.tw n=k aAwj Axt
+;
+The two doors of the horizon will be opened for you.
+
+sSn n=k qArt Ds<14>=sn
+;
+Bolts will unfasten by themselves for you.
+
+Xnm=k wsxt nt mAatj
+;
+You will enter the Hall of the Two Truth.
+
+wSd Tw nTr jm=s
+;
+The god who is therein will greet you.
+
+jr=k Hms m-Xnw jmHt
+;
+You will settle within the underworld.
+
+wsTn=k m njwt <15> nt Hapj
+;
+You will walk into the town <15> of the Nile.
+
+Aw jb=k m skA=k m Sd=k n ^sxt-jArw
+;
+You will be glad when you cultivate your plot in the Field of Rushes.
+
+xpr Xrt{t}=k m <16> jrt.n=k
+;
+Your livelihood will become <16> what you have created.
+
+jwt n=k Smw m wAHyt
+;
+The entire harvest will come to you.
+
+aqA.tw n=k aqA mXnt
+;
+The <al>aqA</al> rope of the ferry will be used for you.
+
+<17> sqdy=k xft DD jb=k
+;
+<17> You will sail following your heart.
+
+pr=k r-HA Tnw dwAw
+;
+You will go out every morning,
+
+nw=k Tw Tnw <18> mSrw
+;
+and return every <18> evening.
+
+stA.tw n=k tkA m grH
+;
+The candle is lit for you at night,
+
+r wbnt Sw Hr Snbt=k
+;
+until the sun rises again over your breast.
+
+Dd.tw n=k
+;
+To you will be said:
+
+<19> jj.wj sp 2 m pr=k pn n anxw
+;
+<19> Welcome, welcome, in this house of yours of the living.
+
+dgy=k ^ra m Axt nt pt
+;
+You will see Re on the horizon of the sky.
+
+sgmH=k <20> ^jmn wbn=f
+;
+You will behold <20> Amun when he rises.
+
+rs=k nfr(.tj) m Xrt-hrw
+;
+You will wake up well every day.
+
+dr n=k sDb nb r tA
+;
+All misery on earth will be removed from you.
+
+sb=k nHH m nDm-jb
+;
+You will pass eternity in happiness,
+
+<21> m Hswt nTr jmj=k
+;
+<21> in the favour of the god who is in you.
+
+jb=k m-a=k
+;
+You will have your heart,
+
+nn bTt=f Tw
+;
+without it abandoning you.
+
+DfA=k mn(.w) r st jrj
+;
+Your food will stay in its place,
+
+n kA n sS ^pA-Hrj mAa-xrw
+;
+for the scribe Pa-heri, justified.
+
+<22> Dd=f
+;
+<22> He says:
+
+jnk saH Ax n nb=f
+;
+I was a nobleman beneficial to his lord,
+
+SsA Hr
+;
+skilled,
+
+Sw m mht-jb
+;
+free of forgetfulness,
+
+Sm.n=j <23> Hr wAt
+;
+I went on a path
+
+nD.n=j sj
+;
+after deliberating it,
+
+rx.n=j prw-n-anx
+;
+I knew what mattered in life.
+
+jw Hsb.n=j Drw m sS
+;
+I counted the borders in writing
+
+wDb<24>w m sSrw nb n nsw
+;
+and the riparian lands in every respect of the king,
+
+xt nbt nt pr-nsw a.w.s.
+;
+and every thing of the palace (l.p.h.!),
+
+mj Hapj Hr sTA r wAD-wr
+;
+like the Nile when it flows towards the sea.
+
+rA=j rwD
+;
+My mouth was firm
+
+Hr smnx n nb
+;
+while doing well for the lord.
+
+snD=kw Hr xrt DAt
+;
+I worried about deficiencies.
+
+n sXj=j Hr=j n DbAw
+;
+I was not negligent concerning payments.
+
+n <26> Ssp=j xsAj m prw
+;
+I did not receive bribery from the proceeds.
+
+sSm.n wj [jb]=j Ds=j
+;
+My own [heart] guided me
+
+r [wA]t n Hsyw n <27> nsw
+;
+to the path of those praised by <27> the king.
+
+jr.n wj ar=j m rxxj
+;
+My pen made my famous.
+
+smAa[.n=f xrw=j m DADA]t
+;
+[It] justified [me in the judgement hall.]
+
+Dj.n=f j<28>wn=j
+;
+It gave my character.
+
+hAb=j wrw [...] m-bAH
+;
+I sent great ones [...]
+
+sar<29>.n wj qd=j nfr
+;
+My good character made me advance,
+
+njs=kw [...]
+;
+while I was called [...]
+
+<30> DD.kw Hr mxAt
+;
+<30> Were I put on the scale,
+
+pr.n=j [...] jp.kw mH.kw
+;
+I would go [...] counted, complete,
+
+<31> wDAw.kw
+;
+<31> and undamaged,
+
+Sm.n=j jj.n=j
+;
+and as I went and as I came,
+
+jb=j Xr mjtj
+;
+my heart was such.
+
+n Dd=j gr<32>g r ky
+;
+I did not say a lie to another,
+
+rx.kw nTr jmj rmT
+;
+as I know the god who is in people.
+
+sjA=j sw
+;
+I recognize him,
+
+<33> rx=j pfA r pn
+;
+<33> and I distinguish that from this.
+
+jr.n=j xt mj wDDt
+;
+I did things as commanded.
+
+n Sb=j wpt Hr smj<34>=s
+;
+I did not confuse a mission with its report.
+
+n Dd=j mdwt nt HAw-mr
+;
+I did not say vulgar words.
+
+n wHm=j n jwtjw <35> qd=sn
+;
+I did not report to the unqualified.
+
+jnk jnw n wAH-jb
+;
+I was an exemplar of kindness,
+
+Hsy pr m Xt Hs.w
+;
+a praised one who came from the belly being praised,
+
+<36> HAtj-a n ^nxb ^pA-Hrj mAa-xrw
+;
+<36> count of Elkab, Pa-heri, justified,
+
+jr.n mnaj n sA-nsw sS ^jtf-rwrj mAa-xrw
+;
+begotten by the tutor of the prince, scribe Itef-ruri, justified,
+
+ms.n nbt-pr <37> ^kmj mAat-xrw
+;
+born of the lady of the house <37> Kemi, justified.
+
+Dd=f
+;
+He says:
+
+sDmw jrf Tn ntjw m xpr
+;
+Hear, those who are living,
+
+Dd=j n=Tn
+;
+I speak to you
+
+nn grg <38> jm
+;
+without lying.
+
+j anxw wnnyw wrw rmT tpjw-tA
+;
+O living, those who exist, great ones, people, those who are on earth,
+
+Hmw-nTr wabw jrjw=sn
+;
+prophets, priests, and their companions,
+
+sS nb Ssp <39> gstj
+;
+every scribe who takes <39> a palette,
+
+SsA Hr m mdw-nTr
+;
+who is familiar with writing,
+
+jqr nb n smdt=f
+;
+all who are excellent to their subordinates,
+
+Tn rA m aba wn<40>wt=f
+;
+with distinguished mouth in boasting<note>Translation is
+uncertain.</note> of their service,
+
+Hsy Tn ^ra nb nHH
+;
+you will be praised by Re, lord of eternity,
+
+^nxbt HDt ^nxn
+;
+and Nekhbet, the White One of Hierakonpolis,
+
+ntjw nb mnx m jAwt=f
+;
+and all (the gods) who are excellent in their profession.
+
+swD=Tn n Xrdw=Tn
+;
+May you bequeath to your children,
+
+mj <41> Dd=Tn Htp-Dj-nsw
+;
+as <41> you say `a royal offering'
+
+m-snt-r ntt m sS
+;
+as what is written,
+
+prt-r-xrw m Dd tpjw-a
+;
+and `a mortuary offering' as the ancestors said,
+
+mj prrt m rA n nTr
+;
+as it comes from the mouth of a god.
+
+qaH<42>.tj=fj nb m Drt=f
+;
+Anyone who will extend his hand
+
+xpr=f m sxr mAat
+;
+will be just.
+
+jrt mj xpr mjtt r hpw
+;
+Doing as such is done according to the law
+
+smtr<43>.w xnt wD pn
+;
+is assessed primarily of this command.
+
+1000=k m t
+;
+Your thousand of bread,
+
+1000=k m Hnqt
+;
+your thousand of beer,
+
+100000 m bw-nb nfr
+;
+and a hundred thousand of all good things
+
+<44> mAa.w wab
+;
+<44> are offered and consecrated
+
+n ^wsjr
+;
+for the Osiris,
+
+HAtj-a n ^nxb
+;
+the count of Elkab,
+
+HAtj-a n ^jwnyt
+;
+count of Esna,
+
+mH-jb n jmj-rA xtmt
+;
+confidant of the treasurer
+
+m At xnt<45>tyt
+;
+at the moment of the southward voyage,
+
+sS jqr n tp-Hsb
+;
+excellent scribe of calculation,
+
+^pA-Hrj mAa-xrw
+;
+Pa-heri, justified.
+
+Dd=j n=Tn
+;
+I say to you,
+
+Dj=j rx=Tn
+;
+I let you know:
+
+Sdt js <46> pw
+;
+Reciting is
+
+nn prw=f
+;
+without effort,
+
+nn sHwr
+;
+without slander,
+
+nn sxwn jm=f
+;
+without dispute,
+
+nn aH<47>A pw Hna ky
+;
+it is not a fight with another,
+
+nn Aabt nt Hwrw <48> m At=f
+;
+it is not harming a pauper <48> in his hour.
+
+mdwt nDmt nt sDAj-Hr
+;
+It is a pleasant speech of enjoyment,
+
+n sA.n HAtj m sDm sj
+;
+the heart is not sated hearing it.
+
+TAw <49> m rA n wnm.n.tw
+;
+A breath cannot be eaten.
+
+nn sxs nn wrD jm=f
+;
+It is without running or getting tired.
+
+nfr n=Tn jr=Tn st
+;
+It is good for you to do it.
+
+gm[=Tn] [...] <50> [...] Hsj=Tn
+;
+[You] will find [...] <50> [...]
+
+wn=j m tA pn n anxw
+;
+While I was on this earth of the living,
+
+nn jw n nTr r=j
+;
+I didn't sin against a god.
+
+xpr.kw m [Ax] <51> apr
+;
+I became [a spirit] that is provided for.
+
+y(A) smnx.n=j st=j m Xrt-nTr
+;
+I established my place in the necropolis.
+
+Xrt=j m-a=j m xt nbt
+;
+My requirements are in my hands in all things.
+
+n tm=j wSb
+;
+I do not fail to reply.
+
+y(A) sp 2 <52> jt pw saH n jr n=f
+;
+The blessed is a father to one who offers to him.
+
+n xm.n=f stt n=f mw
+;
+He will not forget one who pours water for him.
+
+nfr sDm=Tn
+;
+It is good that you listen.

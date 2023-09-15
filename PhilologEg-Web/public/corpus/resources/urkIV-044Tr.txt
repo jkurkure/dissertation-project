@@ -1,0 +1,123 @@
+creator = Mark-Jan Nederhof
+name = Nederhof
+labelname = Ne
+created = 2020-08-01
+modified = 2020-08-01
+version =
+scheme =
+language = eng
+upload =
+email =
+password =
+hieroglyphic = ignored
+transliteration = shown
+translation = shown
+lexical = ignored
+
+Transliteration and translation of Itef-ruri and his son Pa-heri,
+following the transcription of Sethe (1927), number 44 (pp. 109-110).
+
+The transliteration throughout follows Hannig (1995).
+
+For published translations, see Sethe (1914), number 44 (pp. 54-55).
+
+###
+
+R. Hannig. <i>Grosses Handwörterbuch Ägyptisch-Deutsch: die Sprache
+der Pharaonen (2800-950 v.Chr.)</i>. Verlag Philipp von Zabern, 1995.
+
+K. Sethe. <i>Urkunden der 18. Dynastie -- übersetzt, Volume I</i>.
+Hinrichs, Leipzig, 1914.
+
+K. Sethe. <i>Urkunden der 18. Dynastie, Volume I</i>. Hinrichs,
+Leipzig, 1927.
+
+###
+
+<"A1"> sxmx-jb m xt nbt 
+;
+<"A1"> Enjoying all things,
+
+jrt ra nfr
+;
+spending a beautiful day,
+
+Ssp nDt-Hr dwAt nHb-kAw
+;
+receiving gifts on the morning of the neheb-kau festival,
+
+jn mnaj n sA-nsw ^wAD-msjw
+;
+by the tutor of prince Wadjemes,
+
+HAtj-a n ^nxb
+;
+count of Elkab,
+
+^pA-Hrj mAa-xrw
+;
+Pa-heri, justified.
+
+<"A2"> ms nD[t-Hr]
+;
+<"A2"> Bringing gifts
+
+[jn ms]w=f msw msw=f
+;
+[by] his children and his children's children,
+
+dwAt nHb-kAw
+;
+on the morning of the neheb-kau festival.
+
+<"A3"> ms [...]
+;
+<"A3"> Bringing [...]
+
+Hnkt rnpt nbt 
+;
+offerings, all kinds of vegetables,
+
+dwAt wpt-rnpt
+;
+on the morning of New Year's Day.
+
+<"B1"> jrt Htp-Dj-nsw jn HAtj-a ^pA-Hrj
+;
+<"B1"> Making a royal offering by count Pa-heri.
+
+Dd=f 
+;
+He says:
+
+jw wab xt nbt jrt n kA=Tn
+;
+all things that are done for you are pure.
+
+<"B2"> smA r xt nbt nfrt
+;
+<"B2"> All good things are received.
+
+<"B3"> sA-nsw ^wAD-msjw
+;
+<"B3"> Prince Wadjemes.
+
+<"B4"> sn=f mr=f sA-nsw ^jmn-msjw
+;
+<"B4"> His beloved brother, prince Amenmose.
+
+<"B5"> mnaj n sA-nsw ^wAD-msjw ^jtf-rwrj mAa-xrw
+;
+<"B5"> Tutor of prince Wadjemes, Itef-ruri, justified.
+
+<"B6"> nbt-pr ^kmj mAat-xrw
+; 
+<"B6"> Lady of the house Kemi, justified.
+
+<"C"> mnaj n sA-nsw
+;
+<"C"> Tutor of the prince,
+
+sS ^jtf-rwrj mAa-xrw
+;
+scribe Itef-ruri, justified.

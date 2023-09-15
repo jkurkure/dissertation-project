@@ -1,0 +1,41 @@
+#rib ul{text-align:left;border-bottom:1px solid #ccc; 
+    list-style-type:none;padding:10px 10px;}
+
+#rib ul li{display:inline;}
+#rib ul li p{font-weight:bold;border:1px solid #ccc; 
+    text-decoration:none;padding:10px 20px;
+    border-bottom:none;margin-right:5px;
+    margin-bottom:1px;background-color:#eee}
+    #rib ul li p.current{background-color:#fff;
+    border-bottom:1px solid #fff;}
+    #rib ul li p{color:#000;background-color:#eee;}
+    #rib ul li p:hover{color:#E66;} 
+
+#nav ul{text-align:left;border-bottom:1px solid #ccc; 
+    list-style-type:none;padding:10px 10px;}
+    
+#nav ul li{display:inline;}
+    #nav ul li a{font-weight:bold;border:1px solid #ccc; 
+    text-decoration:none;padding:10px 20px;
+    border-bottom:none;margin-right:5px;
+    margin-bottom:1px;background-color:#eee}
+    #nav ul li a.current{background-color:#fff;
+    border-bottom:1px solid #fff;}
+    #nav ul li a{color:#000;background-color:#eee;}
+    #nav ul li a:hover{color:#E66;}
+    
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 2px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #3e8e41;
+}

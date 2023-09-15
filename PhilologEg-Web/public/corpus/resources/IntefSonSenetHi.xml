@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<egyptian
+  creator="Mark-Jan Nederhof"
+  name="Nederhof"
+  labelname=""
+  created="2016-08-04"
+  modified="2017-01-19"
+  version=""
+  scheme=""
+  language=""
+  upload=""
+  email=""
+  password=""
+>
+<header>
+<p>
+Transcription of a photograph of EA581 from the British Museum
+website. Also considered was the transcription by Sethe (1928), pp.
+80-81.
+</p>
+</header>
+<bibliography>
+<li>
+K. Sethe. <i>Aegyptische Lesestücke</i>. J.C. Hinrichs'sche
+Buchhandlung, Leipzig, 1928.
+</li>
+</bibliography>
+<tier name="hieroglyphic" mode="shown"/>
+<tier name="transliteration" mode="ignored"/>
+<tier name="translation" mode="ignored"/>
+<tier name="lexical" mode="ignored"/>
+<segment>
+<texthi>
+<coord id="1"/><pos symbol="12" id="0"/>[hrl]sn-n:D19:N17:n-W18-n:(.:t)*R14-G4-U2:ir-G2-nfr-Z1:Z1*Z1-wp:N31-E19
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="2"/><pos symbol="0" id="1"/>[hrl]i-n:insert[b](ns,Z1)-D42:Xn-nw:t:Z4-W25-n:t:f-insert[bs](D,d):f-i-r:g:r-insert[ts](P7,t)-t:pr-T:n:ir-n:A1
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="3"/><pos symbol="0" id="2"/>[hrl]m-z:t:xAst-n:t-Ab*[fit]b-Dw:niwt-N18:Z1*N23:p:n-n:[sep=0.5]q:[sep=0.5]r:[sep=0.5]D41-i-r:f-inb*Z3-M8:A-Y1a
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="4"/><pos symbol="0" id="3"/>[hrl]n:nb:Z1*r-Dr:r-st-t:pr-insert[be,sep=0.4](insert[te](Ax,x),t)-Dr:r-r:k:ra-ir:st*A40-g:r:t-U17-t:n-G5
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="5"/><pos symbol="0" id="4"/>[hrl]n:t:f-A40-Z3-bA:k-t*n:(mDAt:Z2)*s-sbA:Z2-m-[fit]pt:t:Z1-H-n:nw:t-B1-n:(t:N8)*(Z1:Z1*Z1)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="6"/><note symbol="24">Read
+<hi>m</hi>.</note><pos symbol="0" id="6"/>[hrl]i-t:D54-n:s-insert[te](wr,r)-A40-Z3-m-R11-R11-insert[be](insert[te](w,niwt),Z1)-sn-n:(nw:t)*Z1*Z1-iwn-nw:niwt-G4
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="7"/><pos symbol="1" id="5"/>[hrl]insert[s](Ax,x)-mDAt:Z1:Z1*Z1-Htp:t*p-n:nb:Z1-Dr:r-A40-Hr:r-s[mirror]-O3-n:F39:[sep=0.5,fit]Z1-insert[b](ns,a:x*nw)-t:Z4-W25-t:f-ir:n:z:n:t
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="8"/>[vrl]nw:k-g:r-mDAt:n-E2-Z9:n:n-x[scale=0.9]-[fit]m-D35-n-U7:[sep=0.4,fit]t-U35*[sep=0.3,fit]A-d:I5
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="9"/>[vrl]nw:k:q-b*W15-Sw*w-m-(x:x)*xA-D54*Hr-r:x:mDAt-pr:D54*Z1*Z1*Z1-x-mt:[fit]ii*i*i*t
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="10"/>[vrl]nw:k-(xrw:.)*(d:w)-[sep=0.5,fit]w:mDAt-m-st*(t:pr:Z1*Z1*Z1)-(.:Z9[scale=0.7])*[sep=0.4,fit]E2-r:x:mDAt-Tz:mDAt:n-(q:n:d:t)*(Hr:s)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="11"/>[vrl]nw:k-s[mirror]*(f:n:nw)-mDAt:[sep=0.5]F21a[scale=0.8]*Z1:[sep=0.5]mDAt-A1-r:n-A1-n:f:d-n:E34a:n-(n:insert[te](m,t))*[sep=0.4,fit](ib:A1)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="12"/>[vrl]nw:k-I5:[sep=0.5,fit]w*.:[sep=0.4,fit]a-n:nw*D54-s[mirror]*(f:n:nw*Z1)-s[mirror]*(g:r:mDAt)-D9-w-m-(x:n:mDAt)*nfr
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="13"/>[vrl]nw:k-HD*Hr-n:n-.*t:[sep=0.3,fit]wA*.-A-A1-f:ir-insert[s](Ax,x)-t:mDAt:n-mi*i*A1-f
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="14"/><note symbol="25">According to Sethe (1928) but
+difficult to see in the photograph from the British
+Museum.</note>[vrl]nw:k-insert[b,sep=0.5](mt,t)-D50*D50*m-pr*Z1-nb:[sep=0.5]Z1:[sep=0.7,fit]f-r:x:mDAt-p:X-pXr:mDAt-m-s[mirror]*M42-n[mirror]:(D[yscale=0.5]:[sep=0.1]d)*[sep=0.2]t
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="15"/>[vrl]nw:k-HD*Hr-[fit]Aw:[sep=0.7,fit]a*.-d:t*Z1-nb-insert[bs](D[yscale=0.6],f):X4b:Z1*Z1*Z1-Sw*w-m-H*b*s[mirror]-S28*Hr
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="16"/>[vrl]nw:k-x:n-nm*m-s[mirror]*A21-n:G37-A1*(Z1:Z1*Z1)-b*(n:r:mDAt)-(U2:t)*M1-n:D35:t*Z4-n:f
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="17"/>[vrl]nw:k-s[mirror]*m-F37:[sep=0.4,fit]mDAt-(H:.)*(q:r:G37a)-D35:n-x*t:mDAt:Z1*Z1*Z1-f:Aw-d:t*Z1-n:n-G37-A1*(Z1:Z1*Z1)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="18"/>[vrl]nw:k-r:x:mDAt-n:n-t*Z4:[sep=0.4]D35-r:x-mDAt:f-s*b*sbA:mDAt-z:A1*Z1-insert[be](insert[s](Ax,x),t)-s*(n:f)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="19"/>[vrl]nw:k-insert[bs](mt,t)-Dba*Dba*Y1a:n-sw*[sep=0.7,fit](t:n:pr)-r:x:mDAt-insert[b](D[yscale=0.6]:.,d:t)-m-x*[sep=0.6,fit]A-pr*Z1-nb
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="20"/>[vrl]nw:k-F21a*w:mDAt-F21a*Z1:mDAt-A1-Aa11:t:mDAt-(s[mirror]:.)*(wA:A)-wA*A-i*s*s*t-Hr*ib*Z1
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="21"/>[vrl]nw:k-b*(n:r)-n:pr*Z1-nb:[sep=0.4]Z1:[sep=0.5,fit]f-s[mirror]*(x:xA)-w-Hr*Z1-z:p*O50-Z1*Z1*Z1:f-m-a:r:mDAt
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="22"/>[vrl]nw:k-nfr*m-Xn-nw*pr-x*[sep=0.3]A-pr*(Z1:Z1*Z1)-wA*A-H*sk*ib-Sw*[sep=0.5]w-m-(r:r)*[sep=0.5]i*[sep=0.4]t
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="23"/>[vrl]nw:k-nfr*(f:r)-[sep=0.5]D35:n-s[mirror]*i*(n:D54)-Hr*Z1-t:[sep=0.5,fit]tm-m:n-Dr:r-w:z-(A1:Hr)*(tp:[sep=0.4]t:[sep=0.5]r:[sep=0.5]Z1)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="24"/>[vrl]nw:k:[sep=0.6,fit]a-insert[te](A,q)-Dba*Dba*Y1a-mi*(t:Z4)-E9:[sep=0.8,fit]z*.-U38-insert[bs,sep=0.4](mt,t)-Dba*Dba*Y1a-mAa:a-mi*G26a
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="25"/>[vrl]nw:k-mn:n:mDAt-D56*Z1-i*(q:r:mDAt)-s[mirror]*(x:r:mDAt)-Aa23-mDAt:insert[sep=0.5](mt,t)-n:N31:n-s[mirror]*(mn:x*U22)-sw*w
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="26"/>[vrl]nw:k-r:[sep=0.5]x:[sep=0.5]mDAt-s*[sep=0.3]b*[sep=0.6]sbA:mDAt-sw*w-r:x:mDAt-n:nD*[fit](nw:mDAt)-n:nD*[fit](nw:mDAt)-r:[sep=0.3]D37-nD*[sep=0.2]m*[sep=0.6,fit](t:nw:empty[width=0.0,height=0.4])-[sep=0.3]a:f
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="27"/>[vrl]nw:k-(md:.)*(d:w)-[sep=0.5,fit]w*.:mDAt-m-x*[fit]A-pr*Z1:n-mAa:t:mDAt-s*M44*[fit](r:Z1)-(m:[sep=0.5]st[yscale=0.8]*Z1*[sep=0.4](Z1:Z1))*[sep=0.3](H*(n:s):[sep=0.5].*ib*Z1)
+</texthi>
+</segment>
+</egyptian>
