@@ -1,0 +1,545 @@
+doctype html
+html(lang="en")
+
+   //- script(src="/hierojax/resconversion.js")
+   script(src="/resconcat/res_concat.js")
+   script(src="/resconcat/util.js")
+
+   h3
+      i(id="info")
+
+   div#res_outsidescreen
+      span.res_outsidescreen_elem.hi
+         &#57344;
+      span.res_outsidescreen_elem.hiaux
+         &#35;
+      span.res_outsidescreen_elem.hinotes
+         &#35;
+
+   div#nav
+      table(id="books")
+      table(id="kings")
+
+
+   div#error-results(class="hidden")
+      h2 Errors
+      textarea(id="error-text", rows="10", cols="50", readonly="readonly")
+   div#parse-results(class="hidden")
+      h2 Transcript
+      ol#outputs
+
+   script.
+      window.onresize = function(){ location.href = "#{currentURL}/"; };
+      localStorage.setItem("text-url", "#{textUrl}");
+      var xmlhttp = new window.XMLHttpRequest();
+      xmlhttp.open("GET", localStorage.getItem("text-url"), true);
+      xmlhttp.send(null);
+      xmlhttp.onreadystatechange = callbackFunction;
+      const RESOURCE_LOADING_TIME = 1000;
+
+      function callbackFunction() {
+         if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            var response = xmlhttp.responseText;
+            var parser = new DOMParser();
+            var xmlDoc = parser.parseFromString(response, "text/xml");
+            var corpus_type = xmlDoc.getElementsByTagName("text")[0].getAttribute("description");
+            document.getElementById("info").innerHTML = corpus_type;
+            //check if hiero is included in the corpus type
+            localStorage.setItem("hiero", corpus_type.includes("hiero"));
+            let reslinks = xmlDoc.getElementsByTagName("resource");
+            for (let i = 0; i < reslinks.length; i++) {
+               if (reslinks[i].getAttribute("location").includes("Hi")) {
+                  localStorage.setItem("hieroURL", reslinks[i].getAttribute("location").replace("..", "https://raw.githubusercontent.com/jkurkure/jkurkure.github.io/develop/corpus"));
+               }
+            }
+
+            //populate table with information of books
+            var books = document.getElementById("books");
+            books.innerHTML = "<tr><th>Books</th></tr>";
+            var data = xmlDoc.getElementsByTagName("collection");
+
+            //loop through data to find all tags with attribute kind="book"
+            for (var i = 0; i < data.length; i++) {
+               if (data[i].getAttribute("kind") == "books") {
+                  var row = books.insertRow(1);
+                  var cell = row.insertCell(0);
+                  cell.innerHTML = data[i].getAttribute("collect");
+               }
+            }
+
+            //populate table with information of kings
+            var kings = document.getElementById("kings");
+
+            kings.innerHTML = "<tr><th>Kings</th></tr>";
+            var data = xmlDoc.getElementsByTagName("collection");
+            
+            //loop through data to find all tags with attribute kind="king"
+            for (var i = 0; i < data.length; i++) {
+               if (data[i].getAttribute("kind") == "kings") {
+                  var row = kings.insertRow(1);
+                  var cell = row.insertCell(0);
+                  cell.innerHTML = data[i].getAttribute("collect");
+               }
+            }
+         }
+      }
+
+   br
+   br
+
+   div(id="text-box", style="max-width: 75%; margin: 0 auto;")
+      table(id="text", style="max-width: 100%;")
+
+   div(id="footy")
+
+   script.
+      let data = !{ JSON.stringify(data) };
+            const textDis = document.getElementById('text');
+            const dataArray = data["data"];
+            let tableRows = "";
+            for (let i = 0; i < dataArray.length; i++) {
+               if (dataArray[i].match(/^\s*$/)) {
+                  tableRows += "<tr hidden><td>" + dataArray[i] + "</td></tr>";
+               }
+               else {
+                  if (i%2 == 1) {
+                     tableRows += "<tr><td>" + dataArray[i] + "</td></tr>";
+                  }
+                  else {
+                     if (localStorage.getItem("hiero")) {
+                        tableRows += "<tr><td><hil></hil><br />" + dataArray[i] + "</td></tr>";
+                     }
+                     else {
+                        tableRows += "<tr><td>" + dataArray[i] + "</td></tr>";
+                     }
+                  }
+               }
+            }
+            //tableRows = tableRows.replace(/(<\/?hi>|<\/?note>)/g, match => match + ' '.repeat(match.length));
+            var regex = /<(\d+)>/g; // Regular expression to match <n> where n is a number
+            var replacement = '<span style="color:red"><sub>$1</sub>｜ </span>'; // Replace with <span class="red-text"><n></span>
+            tableRows = tableRows.replace(regex, replacement);
+            textDis.innerHTML = tableRows;
+
+            const footnotes = document.getElementById('footy');
+            const noteArray = data["foot"];
+            let chits = "";
+            for (let i = 0; i < noteArray.length; i++){
+               chits += "<p><sup>" + i + "</sup> " + noteArray[i] + "</p>";
+            }
+            chits += "<p><note>The average line utilization is " + data["utilised"] + "%</note></p>";
+            footnotes.innerHTML = chits;
+            
+            
+
+      //foreign tier hieroglyphs rendering
+      let inline_hiero = document.getElementsByTagName("hi");
+      for (let i = 0; i < inline_hiero.length; i++) {
+         inline_hiero[i].innerHTML = "&#" + uniGlyphs[inline_hiero[i].innerHTML.trim()] + ";" + " ".repeat(inline_hiero[i].innerHTML.length - inline_hiero[i].innerHTML.trim().length);
+      }
+
+
+   script.
+      // get document coordinates of the element
+      function getCoords(elem) {
+      let box = elem.getBoundingClientRect();
+
+      return {
+         top: box.top + window.pageYOffset,
+         right: box.right + window.pageXOffset,
+         bottom: box.bottom + window.pageYOffset,
+         left: box.left + window.pageXOffset
+      };
+      }
+      function alignAnchors() {
+         //get list of tr elements
+         var trs = document.querySelectorAll('table#text tr');
+         //loop through tr elements
+         for (var i = 0; i < trs.length; i+=2) {
+            //get all <sub> elements
+            var anchors = trs[i].getElementsByTagName("span");
+            var anchors1 = trs[i+1].getElementsByTagName("span");
+            //loop through <sub> elements
+            for (var j = 0; j < anchors.length; j++) {
+               //get the text of the <sub> element
+               var subText = anchors[j].innerHTML;
+               //check if the next tr element contains a <sub> element with the same text
+               for (var k = 0; k < anchors.length; k++) {
+               if (anchors1[k] && anchors1[k].innerHTML == subText) {
+                  let coords = getCoords(anchors[j]);
+                  let coords1 = getCoords(anchors1[k]);
+
+                  if (coords.left < coords1.left && anchors[j].style.marginLeft == "") {
+                     anchors[j].style.marginLeft = (coords1.left - coords.left) + "px";
+                  }
+
+                  else if (coords1.left < coords.left && anchors1[k].style.marginLeft == ""){
+                     anchors1[k].style.marginLeft = (coords.left - coords1.left) + "px";
+                  }
+               }
+               }
+            }
+
+         }
+      }
+
+      let hi_lines_raw = [];
+      const fontsize = parseInt(getComputedStyle(document.querySelector("table#text")).fontSize)*2;
+
+      function insertHiero() {
+         if (localStorage.getItem("hiero")){
+            var xmlhttp = new window.XMLHttpRequest();
+            console.log(localStorage.getItem("hieroURL"))
+            xmlhttp.open("GET", localStorage.getItem("hieroURL"), true);
+            xmlhttp.send(null);
+            xmlhttp.onreadystatechange = callbackFunction1;
+
+            function callbackFunction1() {
+               if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                  var response = xmlhttp.responseText;
+                  var parser = new DOMParser();
+                  var xmlDoc = parser.parseFromString(response, "text/xml");
+
+                  let hi_lines = xmlDoc.getElementsByTagName("texthi");
+                  let floater = 1;
+                  
+                  for (var i = 0; i < hi_lines.length; i++) {
+                     let hi_line = hi_lines[i];
+                     if (hi_line.querySelector("coord") == null) {
+                        let innerText = Array.from(hi_line.childNodes).filter((hi_child) => hi_child.nodeType == 3).map((hi_child) => hi_child.textContent).join('');
+                        innerText.replace("\n", "");
+                        let coord = document.createElement("coord");
+                        coord.setAttribute("id", "PRE" + floater);
+                        floater = floater + 1;
+                        coord.innerHTML = innerText;
+                        document.querySelector("table#text tr").querySelector("hil").appendChild(coord);
+                        continue;
+                     }
+                     let valign = hi_line.querySelector("coord").getAttribute("id");
+                     
+                     var trs = document.querySelectorAll("table#text tr");
+                     for (var j = 0; j < trs.length; j+=2) {
+                        var anchors = trs[j].getElementsByTagName("span");
+                        for (var k = 0; k < anchors.length; k++) {
+                           if (anchors[k].textContent.match(/(\d+)/)[0] == valign) {
+                              let coords = getCoords(anchors[k]);
+                              try {
+                                 trs[j].querySelector("hil").innerHTML += '<span style="color:red"><sub>' + valign + '</sub>｜ </span>' + hi_line.innerHTML;
+                              }catch (e) {
+                                 console.log(j, e, "LOOK!!");
+                              }
+                              k = 1000000000;
+                              j = 1000000000;
+                           }
+                        }
+                     }
+                  }
+                  let hils = document.querySelectorAll('hil coord');
+                  let notes = [];
+                  for (let i = 0; i < hils.length; i++) {
+                     let notes_tier = hils[i].querySelectorAll('note');
+                     for (let j = 0; j < notes_tier.length; j++) {
+                        notes.push(hils[i].removeChild(notes_tier[j]));
+                     }
+                     
+                     const frag = hils[i].textContent;
+                     hi_lines_raw.push(frag);
+                  }
+                  //- processRaw(hi_lines_raw);
+               }
+            }
+         }
+      }
+
+      //- let hi_records = {};
+
+      //- function sizeCheck () {
+      //-    let hieros = document.querySelectorAll('#outputs li');
+      //-    for (let i = 0; i < hieros.length; i++) {
+      //-       let frags = hieros[i].querySelectorAll('span.hierojax');
+      //-       hi_records[i+1] = [];
+      //-       for (let j = 0; j < frags.length; j++) {
+      //-          hi_records[i+1].push(frags[j].innerHTML);
+      //-       }
+      //-    }
+      //- }
+
+      let hieroInsert = () => {
+         let slots = document.querySelectorAll('hil coord');
+         for (let i = 0; i < slots.length; i++) {
+            slots[i].innerHTML = "";
+            const canvas = document.createElement("canvas");
+            slots[i].appendChild(canvas);
+            canvas.className = 'res';
+            const txt = document.createTextNode(hi_lines_raw[i]);
+            canvas.appendChild(txt);
+            canvas.setAttribute("style", "font-size: " + fontsize + "px");
+            ResWeb.makeSometime(canvas);
+         }   
+      }
+
+      let hieroAlign = () => {
+         //get list of every other tr element
+         var trs = document.querySelectorAll("table#text tr");
+         //loop through tr elements
+         for (var i = 0; i < trs.length; i+=2) {
+            var hi_anchors = trs[i].querySelectorAll("hil span");
+            var tr_anchors = trs[i].querySelectorAll(":not(hil span, :not(span))");
+            
+            for (var j = 0; j < hi_anchors.length; j++) {
+               var hi_anchor = hi_anchors[j];
+               var hi_text = hi_anchor.innerHTML;
+               for (var k = 0; k < tr_anchors.length; k++) {
+                  var tr_anchor = tr_anchors[k];
+                  var tr_text = tr_anchor.innerHTML;
+                  if (hi_text == tr_text) {
+                     let coords = getCoords(hi_anchor);
+                     let coords1 = getCoords(tr_anchor);
+                     if (coords.left < coords1.left) {
+                        hi_anchor.style.marginLeft = (_parseInt(hi_anchor.style.marginLeft) + (coords1.left - coords.left)) + "px";
+                     }
+                     else if (coords1.left < coords.left){
+                        tr_anchor.style.marginLeft = (_parseInt(tr_anchor.style.marginLeft) + (coords.left - coords1.left)) + "px";
+                     }
+                  }
+               }
+            }
+         }
+      }
+
+      let hieroBreak = () => {
+         //find all hieroglyphic lines that are wrapped
+         let trs = document.querySelectorAll('table#text tr');
+         for (let i = 0; i < trs.length; i+=2) {
+            let hieroLn = trs[i].querySelector('hil');
+            if (trs[i].hidden || !hieroLn.querySelector('canvas')) {
+               continue;
+            }
+            //calculate the total width of all child elements and compare to the width of the parent element
+            while (hieroLn.getClientRects().length>2) {
+               hieroLn.scrollIntoView();
+               //insert two blank rows in the table
+               let newHiContainer = trs[i].cloneNode(false);
+               let newHi = document.createElement("td");
+               newHiContainer.appendChild(newHi);
+               let newTl = document.createElement("tr");
+               newTl.setAttribute("hidden", "true");
+               newTl.innerHTML = "<td></td>";
+               
+               trs[i].parentNode.insertBefore(newHiContainer, trs[i+2]);
+               trs[i].parentNode.insertBefore(newTl, trs[i+2]);
+               //move the wrapped hieroglyphic line to the new row
+               let childs = hieroLn.children;
+               let newFrag = document.createElement("hil");
+               newHi.appendChild(newFrag);
+               newFrag.appendChild(childs[childs.length-1]);
+               newFrag.prepend(childs[childs.length-1]);
+               //check if corresponding anchor exists and move that too
+               let kids = Array.from(trs[i].querySelector("td").childNodes);
+               for (let j = 0; j < kids.length; j++) {
+                  if (kids[j].innerHTML == newHi.querySelector('span').innerHTML) {
+                     newHi.appendChild(document.createElement("br"));
+                     for (let k = j; k < kids.length; k++) {
+                        newHi.appendChild(kids[k]);
+                     }
+                  }
+               }
+               trs = document.querySelectorAll('table#text tr');
+            }
+
+            let brkPoint = -1;
+            let oldRes = hieroLn.querySelectorAll('canvas')[hieroLn.querySelectorAll('canvas').length-1].textContent;
+            let currIndx = -1;
+            const minSize = 0;
+            while (hieroLn.getClientRects().length>1 || (hieroLn.getBoundingClientRect().width > trs[i].getBoundingClientRect().width)) {
+               let children = hieroLn.querySelectorAll('*');
+               let lastChild = children[children.length+currIndx];
+
+               if (lastChild.nodeName.toLowerCase() == "canvas") {
+                  let innerRes = lastChild.textContent;
+                  let frag = new ResTierPart(innerRes, fontsize);
+                  let j = frag.nSymbols() - 1;
+                  
+                  while(!frag.breakable(j) && j>minSize) { j--;}
+                  if (j == minSize) {
+                     let coord = lastChild.parentNode;
+                     coord.removeChild(lastChild); 
+                     const newtxt = document.createTextNode(oldRes);
+                     canvas = document.createElement("canvas");
+                     canvas.setAttribute("class", "res");
+                     if (i+2 > trs.length) {
+                        //insert two blank rows in the table
+                        let newHiContainer = trs[i].cloneNode(false);
+                        let newHi = document.createElement("td");
+                        newHiContainer.appendChild(newHi);
+                        let newTl = document.createElement("tr");
+                        newTl.setAttribute("hidden", "true");
+                        newTl.innerHTML = "<td></td>";
+                        trs[i].parentNode.appendChild(newHiContainer);
+                        trs[i].parentNode.appendChild(newTl, trs[i+2]);
+                     }
+                     if (trs[i+2].hidden) {
+                        trs[i+2].removeAttribute("hidden");
+                        trs[i+2].querySelector("td").appendChild(document.createElement("hil"));
+                        trs[i+2].querySelector("td").appendChild(document.createElement("br"));
+                     }
+                     trs[i+2].querySelector("hil").prepend(coord);
+                     coord.appendChild(canvas);
+                     canvas.appendChild(newtxt);
+                     canvas.setAttribute("style", "font-size: " + fontsize + "px");
+                     ResWeb.makeSometime(canvas);
+                     let push = coord.nextSibling;
+                     if (push != null && push.nodeName.toLowerCase() == "span" && push.style.marginLeft != "" && parseInt(push.style.marginLeft) > canvas.width) {
+                        push.style.marginLeft = (parseInt(push.style.marginLeft) - canvas.width) + "px";
+                     }
+                     brkPoint = -1;
+                     oldRes = hieroLn.querySelectorAll('canvas')[hieroLn.querySelectorAll('canvas').length-1].textContent;
+                     continue; 
+                  }
+                  let split = frag.split(j);
+                  brkPoint = j;
+                  const txt = document.createTextNode(split.prefix);
+                  lastChild.innerHTML = "";
+                  lastChild.appendChild(txt);
+                  lastChild.setAttribute("style", "font-size: " + fontsize + "px");
+                  ResWeb.makeSometime(lastChild);
+               }
+               else if (lastChild.nodeName.toLowerCase() == "span") {
+                  currIndx += 1;
+                  if (trs[i+2].hidden) {
+                     trs[i+2].removeAttribute("hidden");
+                     trs[i+2].querySelector("td").appendChild(document.createElement("hil"));
+                     trs[i+2].querySelector("td").appendChild(document.createElement("br"));
+                  }
+                  trs[i+2].querySelector("hil").prepend(lastChild);
+                  lastChild.style.marginLeft = "";
+                  //check if corresponding anchors exist and move that too
+                  let kids = Array.from(trs[i].querySelector("td").childNodes);
+                  for (let j = 0; j < kids.length; j++) {
+                     if (kids[j].innerHTML == lastChild.innerHTML) {
+                        let corrFrag = document.createDocumentFragment();
+                        kids[j].style.marginLeft = "";
+                        for (let k = j; k < kids.length; k++) {
+                           corrFrag.appendChild(kids[k]);
+                        }
+                        trs[i+2].querySelector("td").insertBefore(corrFrag, trs[i+2].querySelector("br").nextSibling);
+                     }
+                  }
+                  let kids1 = Array.from(trs[i+1].querySelector("td").childNodes);
+                  for (let j = 0; j < kids1.length; j++) {
+                     if (kids1[j].innerHTML == lastChild.innerHTML) {
+                        let corrFrag = document.createDocumentFragment();
+                        kids1[j].style.marginLeft = "";
+                        for (let k = j; k < kids1.length; k++) {
+                           corrFrag.appendChild(kids1[k]);
+                        }
+                        corrFrag.appendChild(document.createTextNode(" "));
+                        trs[i+3].querySelector("td").prepend(corrFrag);
+                     }
+                  }
+               }
+               else {
+                  currIndx -= 1;
+               }
+            }
+
+            if (brkPoint > -1) {
+               let newfrag = new ResTierPart(oldRes, fontsize).split(brkPoint).suffix;
+               const newtxt = document.createTextNode(newfrag);
+               canvas = document.createElement("canvas");
+               canvas.setAttribute("class", "res");
+               if (trs[i+2].hidden) {
+                  trs[i+2].removeAttribute("hidden");
+                  trs[i+2].querySelector("td").appendChild(document.createElement("hil"));
+                  trs[i+2].querySelector("td").appendChild(document.createElement("br"));
+               }
+               trs[i+2].querySelector("hil").prepend(canvas);
+               canvas.appendChild(newtxt);
+               canvas.setAttribute("style", "font-size: " + fontsize + "px");
+               ResWeb.makeSometime(canvas);
+               let push = canvas.nextSibling;
+               if (push != null && push.nodeName.toLowerCase() == "span" && push.style.marginLeft != "" && parseInt(push.style.marginLeft) > canvas.width) {
+                  push.style.marginLeft = (parseInt(push.style.marginLeft) - canvas.width) + "px";
+               }
+            }
+            let lastChild = hieroLn.children[hieroLn.children.length - 1];
+            if (lastChild.nodeName.toLowerCase() == "span") {
+               trs[i+2].querySelector("hil").prepend(lastChild);
+                  lastChild.style.marginLeft = "";
+                  //check if corresponding anchors exist and move that too
+                  let kids = Array.from(trs[i].querySelector("td").childNodes);
+                  for (let j = 0; j < kids.length; j++) {
+                     if (kids[j].innerHTML == lastChild.innerHTML) {
+                        let corrFrag = document.createDocumentFragment();
+                        kids[j].style.marginLeft = "";
+                        for (let k = j; k < kids.length; k++) {
+                           corrFrag.appendChild(kids[k]);
+                        }
+                        trs[i+2].querySelector("td").insertBefore(corrFrag, trs[i+2].querySelector("br").nextSibling);
+                     }
+                  }
+                  let kids1 = Array.from(trs[i+1].querySelector("td").childNodes);
+                  for (let j = 0; j < kids1.length; j++) {
+                     if (kids1[j].innerHTML == lastChild.innerHTML) {
+                        let corrFrag = document.createDocumentFragment();
+                        kids1[j].style.marginLeft = "";
+                        for (let k = j; k < kids1.length; k++) {
+                           corrFrag.appendChild(kids1[k]);
+                        }
+                        corrFrag.appendChild(document.createTextNode(" "));
+                        trs[i+3].querySelector("td").prepend(corrFrag);
+                     }
+                  }
+            }
+         }
+         alignAnchors(); hieroAlign();
+      }
+
+      function postProcess() {
+         if (localStorage.getItem(window.location.pathname)) {
+            document.querySelector('table#text').innerHTML = localStorage.getItem(window.location.pathname);
+            return Array.from(document.querySelectorAll('canvas')).map((c) => {ResWeb.makeSometime(c);});
+         }
+         
+         //run each function sequentially
+         new Promise((res, rej) => {
+            alignAnchors();
+         });
+         new Promise((res, rej) => {
+            insertHiero();
+         });
+         new Promise((res, rej) => {
+            setTimeout(res, RESOURCE_LOADING_TIME);
+         }).then((res) => {
+            hieroInsert();
+         });
+         new Promise((res, rej) => {
+            setTimeout(res, RESOURCE_LOADING_TIME);
+         }).then((res) => {
+            hieroAlign();
+         }).then((res) => {
+            hieroBreak();
+         });
+         new Promise((res, rej) => {
+            setTimeout(res, RESOURCE_LOADING_TIME);
+         }).then((res) => {
+            if (document.querySelector('hil coord canvas')) {
+               localStorage.setItem(window.location.pathname, document.querySelector('table#text').innerHTML);
+               console.log(localStorage);
+            }
+            else {
+               var needsReload = window.confirm("Were you expecting hieroglyphs? This page may need to be reloaded to display them.");
+               if (needsReload) {
+                  location.href = location.href + '/../';
+               }
+            }
+         });   
+
+      }
+
+      window.onload = postProcess;
+
+
+
+   link(rel='stylesheet', href='/stylesheets/texts.css')
+   link(rel='stylesheet', href='/resconcat/res.css')

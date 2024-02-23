@@ -1,0 +1,74 @@
+@font-face {
+	font-family: 'Hieroglyphic';
+	src: url('NewGardiner.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'HieroglyphicAux';
+	src: url('HieroglyphicAux.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'HieroglyphicPlain';
+	src: url('CaslonRoman.ttf') format('truetype');;
+}
+
+span.hi {
+	font-family: Hieroglyphic;
+}
+span.hiaux {
+	font-family: HieroglyphicAux;
+}
+span.hinotes {
+	font-family: HieroglyphicPlain;
+}
+
+/* hack to force timely loading of fonts */
+#res_outsidescreen {
+	overflow: hidden;
+	position: absolute;
+}
+.res_outsidescreen_elem {
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	right: 50px;
+	top: 50px;
+}
+
+.res {
+	vertical-align: -10px;
+	font-size: 36px;
+}
+
+.res_uni {
+	vertical-align: -10px;
+	font-size: 36px;
+}
+
+.res_demo {
+	border: 1px solid #000000;
+}
+
+span.res_sign {
+	font-family: Hieroglyphic;
+	vertical-align: 0;
+	font-size: 36px;
+	font-weight: normal;
+}
+span.res_high {
+	vertical-align: -10px;
+}
+span.res_low {
+	vertical-align: 0;
+	line-height: 70%;
+}
+
+@font-face {
+	font-family: 'Transliteration';
+	src: url('DejaVuSans-Bold.ttf') format('truetype');;
+}
+
+span.egytransl {
+	font-family: Transliteration;
+	font-weight: normal;
+	font-style: normal;
+}

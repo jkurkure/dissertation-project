@@ -3,6 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var fileupload = require("express-fileupload");
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -12,6 +13,10 @@ var kingsRouter = require('./routes/kings');
 var museumsRouter = require('./routes/museums');
 var corpusRouter = require('./routes/corpus');
 var corpusIndexRouter = require('./routes/corpus-index');
+
+var textRouter = require('./routes/texts');
+var resDecoder = require('./routes/resDecoder');
+var apiRouter = require('./routes/api');
 
 var app = express();
 
@@ -24,6 +29,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(fileupload());
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
@@ -33,6 +39,9 @@ app.use("/kings", kingsRouter);
 app.use("/museums", museumsRouter);
 app.use("/corpus", corpusRouter);
 app.use("/default-corpus", corpusIndexRouter);
+
+app.use("/texts", textRouter);
+app.use("/api", apiRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

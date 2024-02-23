@@ -102,11 +102,15 @@ script.
             var text = texts[i];
             var text_name = text.getAttribute("name");
             var text_path = text.getAttribute("location");
+            var text_attrib = text.getAttribute("post");
             var text_li = document.createElement("li");
             var text_a = document.createElement("a");
+            var text_span = document.createElement("span");
             text_a.innerHTML = text_name;
-            text_a.href = text_path;
+            text_a.href = "/" + text_path;
+            text_span.innerHTML = "  [" + text_attrib + "]";
             text_li.appendChild(text_a);
+            text_li.appendChild(text_span);
             text_list.appendChild(text_li);
          }
       }
