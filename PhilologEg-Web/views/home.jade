@@ -1,5 +1,5 @@
 script.
-   localStorage.setItem("path", "https://jkurkure.github.io/");
+   localStorage.setItem("path", "/default-corpus");
 
 button Open
 button PDF
@@ -36,11 +36,7 @@ div#nav
              a(href='/corpus/') Corpus
 
 if (currentURL == '/home/')
-  a(href='/example-text') The list of texts will appear here 
-  [example]
-  br
-  a(href='/example-text1') And here 
-  [another example]
+  ul(id="text_list")
 
 if (currentURL == '/books/')
    p The list of books will appear here 
@@ -52,15 +48,66 @@ if (currentURL == '/museums/')
    p The list of museums will appear here
 
 if (currentURL == '/corpus/')
-   \\ three boxes entitled File, Type and Name with content inside
    table 
       tr 
          td File
          td Type
          td Name
       tr
-         td #{path}
-         td sometype
-         td somename
+         td
+            a(id="current_path") somepath
+         td(id="current_corpus_type") sometype
+         td(id="current_corpus_name") somename
 
 link(rel='stylesheet', href='/stylesheets/tabs.css')
+
+script.
+   document.getElementById("current_path").innerHTML = localStorage.getItem("path");
+   document.getElementById("current_path").href = localStorage.getItem("path");
+
+script.
+   var xmlhttp = new window.XMLHttpRequest();
+   xmlhttp.open("GET", localStorage.getItem("path"), true);
+   xmlhttp.send(null);
+   xmlhttp.onreadystatechange = callbackFunction;
+   
+   function callbackFunction() {
+      if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+         var response = xmlhttp.responseText;
+         var parser = new DOMParser();
+         var xmlDoc = parser.parseFromString(response, "text/xml");
+         var corpus_type = xmlDoc.getElementsByTagName("corpus")[0].getAttribute("type");
+         var corpus_name = xmlDoc.getElementsByTagName("corpus")[0].getAttribute("name");
+         document.getElementById("current_corpus_type").innerHTML = corpus_type;
+         document.getElementById("current_corpus_name").innerHTML = corpus_name;
+
+         
+      }
+   }
+
+script.
+   var xmlhttp1 = new window.XMLHttpRequest();
+   xmlhttp1.open("GET", localStorage.getItem("path"), true);
+   xmlhttp1.send(null);
+   xmlhttp1.onreadystatechange = callbackFunction;
+
+   function callbackFunction() {
+      if (xmlhttp1.readyState == 4 && xmlhttp1.status == 200) {
+         var response = xmlhttp.responseText;
+         var parser = new DOMParser();
+         var xmlDoc = parser.parseFromString(response, "text/xml");
+         var texts = xmlDoc.getElementsByTagName("tree")[0].getElementsByTagName("leaf");
+         var text_list = document.getElementById("text_list");
+         for (var i = 0; i < texts.length; i++) {
+            var text = texts[i];
+            var text_name = text.getAttribute("name");
+            var text_path = text.getAttribute("location");
+            var text_li = document.createElement("li");
+            var text_a = document.createElement("a");
+            text_a.innerHTML = text_name;
+            text_a.href = text_path;
+            text_li.appendChild(text_a);
+            text_list.appendChild(text_li);
+         }
+      }
+   }

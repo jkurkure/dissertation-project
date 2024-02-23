@@ -11,6 +11,7 @@ var booksRouter = require('./routes/books');
 var kingsRouter = require('./routes/kings');
 var museumsRouter = require('./routes/museums');
 var corpusRouter = require('./routes/corpus');
+var corpusIndexRouter = require('./routes/corpus-index');
 
 var app = express();
 
@@ -31,6 +32,7 @@ app.use("/books", booksRouter);
 app.use("/kings", kingsRouter);
 app.use("/museums", museumsRouter);
 app.use("/corpus", corpusRouter);
+app.use("/default-corpus", corpusIndexRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
