@@ -18,6 +18,8 @@ var textRouter = require('./routes/texts');
 var resDecoder = require('./routes/resDecoder');
 var apiRouter = require('./routes/api');
 
+var cors = require('cors');
+
 var app = express();
 
 // view engine setup
@@ -42,6 +44,8 @@ app.use("/default-corpus", corpusIndexRouter);
 
 app.use("/texts", textRouter);
 app.use("/api", apiRouter);
+
+app.use(cors());
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
