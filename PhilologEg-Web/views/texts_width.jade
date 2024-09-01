@@ -1,0 +1,34 @@
+link(rel='stylesheet', href='/stylesheets/texts.css')
+
+div(id="text-box", style="width: 75%; margin: 0 auto;")
+   table(id="text", style="max-width: 100%;")
+      tr
+         td
+
+script.
+   const BUFFER = localStorage.getItem("buffer") || 0.83;
+
+    const colWidth = () => {
+      let test = document.createElement("span"); 
+      document.body.appendChild(test); 
+      if (localStorage.getItem("fontsize") != null) {
+         test.style.fontSize = localStorage.getItem("fontsize") + "px";
+      }
+      else {
+         test.style.fontSize = getComputedStyle(document.querySelector("table#text")).fontSize;
+      } 
+      test.style.height = 'auto'; 
+      test.style.width = 'auto'; 
+      test.style.position = 'absolute'; 
+      test.style.whiteSpace = 'no-wrap'; 
+      test.innerHTML = "The quick brown fox jumps over the lazy dog"; 
+   
+      let mean_width = Math.ceil(test.clientWidth)/43;
+
+      document.body.removeChild(test);
+
+      return Math.floor(BUFFER*(document.querySelector("#text-box").offsetWidth / mean_width));     
+    }
+    
+   //window.alert(localStorage.getItem("fontsize") + "px" + " VS " + getComputedStyle(document.querySelector("table#text")).fontSize);
+   location.href = "#{currentURL}/" + colWidth();

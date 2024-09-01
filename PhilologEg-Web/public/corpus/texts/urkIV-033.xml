@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<text description="hiero; eng; translit">
+<primary language="eng" name="Tombos inscriptions of Tuthmosis I"/>
+<collection kind="books" collect="Urkunden der 18. Dynastie"
+    section="33"/>
+<collection kind="kings" collect="Tuthmosis I"/>
+<resource location="../resources/urkIV-033Hi.xml"/>
+<resource location="../resources/urkIV-033Tr.txt"/>
+<autoalign
+  location1="../resources/urkIV-033Hi.xml"
+  tier1="hieroglyphic"
+  location2="../resources/urkIV-033Tr.txt"
+  tier2="transliteration"/>
+</text>

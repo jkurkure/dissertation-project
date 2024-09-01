@@ -1,0 +1,63 @@
+creator = Mark-Jan Nederhof
+name = Nederhof
+labelname = Ne
+created = 2020-08-01
+modified = 2020-08-01
+version =
+scheme =
+language = eng
+upload =
+email =
+password =
+hieroglyphic = ignored
+transliteration = shown
+translation = shown
+lexical = ignored
+
+Transliteration and translation of inscription of Wadjemes in Western Thebes,
+following the transcription of Sethe (1927), number 43 (p. 108).
+
+The transliteration throughout follows Hannig (1995).
+
+For published translations, see Sethe (1914), number 43 (p. 54).
+
+###
+
+R. Hannig. <i>Grosses Handwörterbuch Ägyptisch-Deutsch: die Sprache
+der Pharaonen (2800-950 v.Chr.)</i>. Verlag Philipp von Zabern, 1995.
+
+K. Sethe. <i>Urkunden der 18. Dynastie -- übersetzt, Volume I</i>.
+Hinrichs, Leipzig, 1914.
+
+K. Sethe. <i>Urkunden der 18. Dynastie, Volume I</i>. Hinrichs,
+Leipzig, 1927.
+
+###
+
+<1> [...]
+;
+<1> [...]
+
+<2> sA-nsw ^wAD-msjw
+;
+<2> Prince Wadjemes.
+
+js[T] <3> jr jmj-rA njwt TAtj
+;
+Now, <3> the leader of the city and vizier
+
+^j-m-Htp
+;
+Imhotep
+
+jw[=f] <4> jr=f jt mnaj n msw-nsw 
+;
+cared for the king's children
+
+n nsw-bjtj <5> ^aA-xpr[-kA]-^ra
+;
+of the king of Upper and Lower Egypt <5> Aakheperkare,
+
+n-aAt-n Hswt[=f] [...]
+;
+because his praise was so much [...]

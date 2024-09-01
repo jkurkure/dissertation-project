@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<text description="hiero; eng; translit">
+<primary language="eng" name="Ity and Iuri, Stela of"/>
+<collection kind="museums" collect="British"
+    section="EA586"/>
+<resource location="../resources/ItyAndIuriHi.xml"/>
+<resource location="../resources/ItyAndIuriTr.txt"/>
+</text>

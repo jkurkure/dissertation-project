@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<egyptian
+  creator="Mark-Jan Nederhof"
+  name="Sethe"
+  labelname="Se"
+  created="2018-07-10"
+  modified="2018-07-10"
+  version=""
+  scheme=""
+  language=""
+  upload=""
+  email=""
+  password=""
+>
+<header>
+<p>
+Transcription of Aakheperka, weapon-bearer of Tuthmosis I, following
+the transcription of Sethe (1927), number 35 (p. 90).
+</p>
+</header>
+<bibliography>
+<li>
+K. Sethe. <i>Urkunden der 18. Dynastie, Volume I</i>. Hinrichs,
+Leipzig, 1927.
+</li>
+</bibliography>
+<tier name="hieroglyphic" mode="shown"/>
+<tier name="transliteration" mode="ignored"/>
+<tier name="translation" mode="ignored"/>
+<tier name="lexical" mode="ignored"/>
+<segment>
+<texthi>
+[hlr]Q1*D4-[sep=0.5]A40-G47-N28:[sep=0.5]D36-M3:Z1*Z1*Z1-N35-cartouche((N5:[sep=0.5]O29)*L1-D28)-O29-L1-D28-[sep=0.5]A1-Aa11[rotate=270]*[sep=0.5]P8-F39:[sep=0.5,fit]Aa1:[sep=0.5]D21-R8*O29a
+</texthi>
+</segment>
+</egyptian>

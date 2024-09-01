@@ -1,0 +1,100 @@
+creator = Mark-Jan Nederhof
+name = Nederhof
+labelname = Ne
+created = 2020-08-01
+modified = 2020-08-01
+version =
+scheme =
+language = eng
+upload =
+email =
+password =
+hieroglyphic = ignored
+transliteration = shown
+translation = shown
+lexical = ignored
+
+Transliteration and translation of scenes from the life of priest Amenhotep,
+at Sheikh Abd el-Qurna,
+following the transcription of Sethe (1927), number 42 (pp. 107-108).
+
+The transliteration throughout follows Hannig (1995).
+
+For published translations, see Sethe (1914), number 42 (pp. 53-54).
+
+###
+
+R. Hannig. <i>Grosses Handwörterbuch Ägyptisch-Deutsch: die Sprache
+der Pharaonen (2800-950 v.Chr.)</i>. Verlag Philipp von Zabern, 1995.
+
+K. Sethe. <i>Urkunden der 18. Dynastie -- übersetzt, Volume I</i>.
+Hinrichs, Leipzig, 1914.
+
+K. Sethe. <i>Urkunden der 18. Dynastie, Volume I</i>. Hinrichs,
+Leipzig, 1927.
+
+###
+
+<A1> mA nDt-Hr 
+;
+<A1> Seeing the gifts
+
+<A2> jnt Hmt=f <A3> msw=f
+;
+<A2> that his wife and his children are bringing
+
+<A4> [...] [n]H<A5>b-kA[w] [...] <A6> [...]
+;
+<A4> [...] neheb-kau festival [...] <A6> [...]
+
+<A7> j[n] sA-nsw tp n ^aA-xpr-kA-^ra 
+;
+<A7> by the first king's-son of Aakheperkare, 
+
+^jmn-Htp mAa-xrw
+;
+Amenhotep, justified,
+
+nbt[-pr] ^rnAy [mAat-xrw]
+;
+and lady [of the house] Renai, [justified].
+
+<"B"> sxmx-jb mA bw-nfr
+;
+<"B"> Enjoying, seeing good things,
+
+jr sxt m kAt sxt
+;
+catching birds
+
+jn mrj ^sxt 
+;
+by the beloved of Sechet,
+
+wab ^jmn-Htp mAa-xrw
+;
+priest Amenhotep, justified.
+
+<"C"> sxmx-jb mA bw-nfr
+;
+<"C"> Enjoying, seeing good things,
+
+Ssp Awt m-Xnw Hwt
+;
+receiving a gift within the house,
+
+m snw n nb nTrw
+;
+from the offerings of the lord of the gods,
+
+n kA wab ^jmn-Htp mAa-xrw
+;
+for priest Amenhotep, justified,
+
+Hmt=f nbt-pr Smayt nt ^jmn
+;
+and his wife, lady of the house, singer of Amun,
+
+^rnAy mAat-xrw
+;
+Renai, justified.

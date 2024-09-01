@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Demo</title>
+<link rel="stylesheet" type="text/css" href="res.css" />
+<script type="text/javascript" src="res_concat.js"></script>
+<script>
+const fontsize = 20;
+const frag = "![red]A1-C1*B1-A1-A1*B1:C1*D1";
+const part = new ResTierPart(frag, fontsize);
+console.log(part.widthPx());
+console.log(part.nSymbols());
+console.log(part.breakable(1));
+console.log(part.breakable(6));
+console.log(part.breakable(9));
+console.log(part.widthPxTo(1));
+console.log(part.widthPxTo(2));
+console.log(part.widthPxTo(3));
+console.log(part.widthPxTo(6));
+console.log(part.widthPxTo(9));
+const split1 = part.split(1);
+const split0 = part.split(0);
+const split2 = part.split(4);
+const split3 = part.split(6);
+console.log(split0.prefix, "AND", split0.suffix);
+console.log(split1.prefix, split1.suffix);
+console.log(split2.prefix, split2.suffix);
+console.log(split3.prefix, split3.suffix);
+
+function addRes(frag) {
+	const ul = document.getElementById("reslist");
+	const li = document.createElement("li");
+	ul.appendChild(li);
+	const canvas = document.createElement("canvas");
+	li.appendChild(canvas);
+	canvas.className = 'res';
+	const txt = document.createTextNode(frag);
+	canvas.appendChild(txt);
+	canvas.setAttribute("style", "font-size: " + fontsize + "px");
+	ResWeb.makeSometime(canvas);
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+	addRes(frag);
+	addRes(split1.prefix);
+	addRes(split1.suffix);
+	addRes(split2.prefix);
+	addRes(split2.suffix);
+});
+
+</script>
+</head>
+<body>
+    <!-- hack to force timely loading of fonts -->
+    <div id="res_outsidescreen">
+        <span class="res_outsidescreen_elem hi">&#57344;</span>
+        <span class="res_outsidescreen_elem hiaux">&#35;</span>
+        <span class="res_outsidescreen_elem hinotes">&#35;</span>
+    </div>
+
+<ul id="reslist">
+</ul>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<egyptian
+  creator="Mark-Jan Nederhof"
+  name="Sethe"
+  labelname="Se"
+  created="2020-08-03"
+  modified="2020-08-03"
+  version=""
+  scheme=""
+  language=""
+  upload=""
+  email=""
+  password=""
+>
+<header>
+<p>
+Transcription of inscription of Itef-ruri and his son Pa-heri,
+following the transcription of Sethe (1927), number 44 (pp. 109-110).
+</p>
+</header>
+<bibliography>
+<li>
+K. Sethe. <i>Urkunden der 18. Dynastie, Volume I</i>. Hinrichs,
+Leipzig, 1927.
+</li>
+</bibliography>
+<tier name="hieroglyphic" mode="shown"/>
+<tier name="transliteration" mode="ignored"/>
+<tier name="translation" mode="ignored"/>
+<tier name="lexical" mode="ignored"/>
+<segment>
+<texthi>
+<coord id="A1"/>[hlr]S29*Aa1-G17*(Aa1:F34)-G17-Aa1*[sep=0.5]X1:[sep=0.5]V30:[sep=0.5]X1-D4:X1-(N5:Z1)*F35-O42:[sep=0.5]Q3:[sep=0.5,fit]D37-Aa27-(W24:X1)*(D2:Z1)-D46-V4*(X1:N14)-G21-V28*[sep=0.5]Z9-[fit]D58*(D28:Z1*Z1*Z1)-M17*S3-Y5:N35-D36:[sep=0.5]Z1*Z1*D27-N35-M23*[sep=0.5]insert[t](G39,Z1)-M14-F31*[sep=0.5]S29-F4:D36-N35-M22-[sep=0.5]O49-[fit]D58*G40-D2:D21:[sep=0.5]Z4-Aa11[rotate=270]*[sep=0.5]P8
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="A2"/>[hlr]G17-[sep=0.5]D36-O35-D54-Aa27-![shade]X1:[sep=0.5]D2-![shade]M17*S3-F31-[sep=0.5]S29![noshade]*G43-A1*(Z1:[sep=0.5]Z1:[sep=0.5]Z1):[sep=0.5]I9-F31-[sep=0.5]S29-insert[te](G43*.,Z1*[sep=0.5]Z1*[sep=0.5]Z1)-F31-[sep=0.5]S29*G43-A1*[sep=0.5](Z1:[sep=0.5]Z1:[sep=0.5]Z1):[sep=0.5]I9-D46-V4-X1:N14-D30[mirror,rotate=270,scale=1.4]*kA:[size=1.2]Z1*Z1*Z1-W3:N5
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="A3"/>[hlr]G17-[fit]D36-O35*[sep=0.5]D54-empty[shade]-D39:X1:N33*N33*N33-M7*(X1:W10)-V30:X1-N14:X1*N5-F13:Q3*X1-M4*(X1:Z1)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B1"/>[hlr]D4:X1-M23*X8-R4*M17-N35-F4:[sep=0.5]D36-G40-D2:[sep=0.5]D21:[sep=0.5]Z4-insert[s](I10,D46)-[sep=0.5]I9-M17*[sep=0.5]G43-D60-Aa1*[sep=0.5]X1:[sep=0.5]V30:[sep=0.5]X1-D4:[sep=0.5]D21:[sep=0.5]X1*Z1*[sep=0.5]Z1*[sep=0.5]Z1-N35:D28*Z1-X1:[sep=0.5]N35:[sep=0.5]Z1*Z1*Z1
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B2"/>[hlr]F36-D21-Aa1*[sep=0.5]X1:[sep=0.5]V30:[sep=0.5]X1-F35-I9:[sep=0.5]D21:[sep=0.5]X1
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B3"/>[hlr]M23*(X1:N35)-insert[t](G39,Z1)-M14-F31*[sep=0.5]S29
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B4"/>[hlr]T22*I9-N36:[sep=0.5]Z1:[fit]I9-M23-X1:N35-insert[t](G39,Z1)-M17*(Y5:N35)-F31*[sep=0.5]S29
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B5"/>[hlr]Y5:N35-D36:[sep=0.5]Z4*D27-N35-M23*[sep=0.5](X1:N35)-insert[t](G39,Z1)-M14-F31*[sep=0.5]S29-M17*(X1:I9)-E23:Z1-D21-M17*M7-Aa11[mirror]:P8[rotate=270]
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B6"/>[hlr]V30:X1:[sep=0.5]O1*Z1-V31-G17-[sep=0.5]D38-Aa11[mirror]:[sep=0.5]X1:P8[rotate=270]
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="C"/>[hlr]Y5:N35-D36:[sep=0.5]Z4*D27-N35-M23-insert[t](G39,Z1)-Y4-M17*(X1:I9)-E23:D21-M17*[sep=0.5]M6-[sep=0.5]A1-Aa11[rotate=270]*P8
+</texthi>
+</segment>
+</egyptian>

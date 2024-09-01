@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<egyptian
+  creator="Mark-Jan Nederhof"
+  name="Sethe"
+  labelname="Se"
+  created="2020-08-02"
+  modified="2020-08-02"
+  version=""
+  scheme=""
+  language=""
+  upload=""
+  email=""
+  password=""
+>
+<header>
+<p>
+Transcription of an inscription at Sheikh Abd el-Qurna of Priest
+Amenhotep and his family, following the transcription of Sethe (1927),
+number 41 (pp. 105-106).
+</p>
+</header>
+<bibliography>
+<li>
+K. Sethe. <i>Urkunden der 18. Dynastie, Volume I</i>. Hinrichs,
+Leipzig, 1927.
+</li>
+</bibliography>
+<tier name="hieroglyphic" mode="shown"/>
+<tier name="transliteration" mode="ignored"/>
+<tier name="translation" mode="ignored"/>
+<tier name="lexical" mode="ignored"/>
+<segment>
+<texthi>
+[hlr]D60-M23-insert[t](G39,Z1)-D1:[sep=0.5]Q3-N35-cartouche(N5:[sep=0.5]O29-L1-D28)-M17*(Y5:N35)-R4-D4:N35-G26:[sep=0.5,fit]T22*[sep=0.5](X1:Z4)*[sep=0.0]empty[width=0.7,height=0.0]-A52-Aa11[mirror]:P8[rotate=270]-N41*X1:I9-N36:[sep=0.5]X1:[sep=0.5]I9-N35:X1-Q1-X1:[sep=0.5]F34-I9-V30:[sep=0.5]X1:[sep=0.5]O1*Z1-M27-M17*[sep=0.3](.:t)*[sep=0.3,fit]M17-N35:X1-[sep=0.5]M17-Y5:N35-A40-D21:N35-G1*[sep=0.5]M17*[sep=0.5]M17-[sep=0.5]B1*[sep=0.5](Aa11[rotate=270]:[sep=0.5]X1)*[sep=0.5]P8-X1:I9-G26:[sep=0.5,fit]T22*[sep=0.5](X1:Z4)*[sep=0.0]empty[width=0.3,height=0.0]*[sep=0.0]M17-N41*[sep=0.5]X1:[sep=0.5]I9-N36:[sep=0.5]X1:[sep=0.5]I9-V30:[sep=0.5]X1:[sep=0.5]O1*Z1-insert[te](G1,X1)-F18:D21:[sep=0.5]D46-A17-Aa11:[sep=0.5]X1:[sep=0.5]P8[rotate=270]-D21:[sep=0.5]Q3:[sep=0.6,fit]D36-F4:[sep=0.5]D36-O34:O29-N35-M23-[sep=0.5]X1:N35-O34-M17*[sep=0.5](N29:D21)-N35-L2-X1*S20-.:X1-[sep=0.0]R8*(Z1*Z1*Z1*Z1:W24)-N35-M17-Y5:N35-F35-R4:X1*Q3-N41*X1:I9-V30:O1*Z1-M17*(Y5:N35)-R4
+</texthi>
+</segment>
+</egyptian>

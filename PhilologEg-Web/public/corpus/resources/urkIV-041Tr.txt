@@ -1,0 +1,92 @@
+creator = Mark-Jan Nederhof
+name = Nederhof
+labelname = Ne
+created = 2020-08-01
+modified = 2020-08-01
+version =
+scheme =
+language = eng
+upload =
+email =
+password =
+hieroglyphic = ignored
+transliteration = shown
+translation = shown
+lexical = ignored
+
+Transliteration and translation of an inscription at Sheikh Abd el-Qurna of
+Priest Amenhotep and his family,
+following the transcription of Sethe (1927), number 41 (pp. 105-106).
+
+The transliteration throughout follows Hannig (1995).
+
+For published translations, see Sethe (1914), number 41 (p. 53).
+
+###
+
+R. Hannig. <i>Grosses Handwörterbuch Ägyptisch-Deutsch: die Sprache
+der Pharaonen (2800-950 v.Chr.)</i>. Verlag Philipp von Zabern, 1995.
+
+K. Sethe. <i>Urkunden der 18. Dynastie -- übersetzt, Volume I</i>.
+Hinrichs, Leipzig, 1914.
+
+K. Sethe. <i>Urkunden der 18. Dynastie, Volume I</i>. Hinrichs,
+Leipzig, 1927.
+
+###
+
+wab sA-nsw tp n ^aA-xpr-kA-^ra ^jmn-Htp
+;
+Priest and first king's-son of Aakheperkare, Amenhotep,
+
+jr.n ^DHwtj-snj mAa-xrw
+;
+begotten by Djehutiseni, justified.
+
+Hmt=f mrt=f nt st-jb=f
+;
+His beloved wife of his affection,
+
+nbt-pr Smayt nt ^jmn
+;
+lady of the house, singer of Amun,
+
+^rnAy mAat-xrw
+;
+Renai, justified.
+
+jt=f ^DHwtj-snj
+;
+His father Djehutiseni.
+
+Hmt=f mrt=f nbt-pr ^tA-Hrd mAat-xrw
+;
+His beloved wife, lady of the house, Tahered, justified.
+
+jrj-pat HAtj-a
+;
+Prince-regent and count,
+
+saA.n nsw
+;
+whom the king of Upper Egypt elevated,
+
+sjqr.n bjtj
+;
+whom the king of Lower Egypt advanced,
+
+xtmt-bjtj
+;
+royal seal-keeper,
+
+jt-nTr 4nw n ^jmn
+;
+fourth god's father of Amun,
+
+^nfr-Htp
+;
+Neferhotep.
+
+Hmt=f nbt-pr ^jmn-Htp
+;
+His wife Amunhotep.

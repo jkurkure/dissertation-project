@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<egyptian
+  creator="Mark-Jan Nederhof"
+  name="Sethe"
+  labelname="Se"
+  created="2016-08-17"
+  modified="2018-07-09"
+  version=""
+  scheme=""
+  language=""
+  upload=""
+  email=""
+  password=""
+>
+<header>
+<p>
+Transcription of four small inscriptions near Tombos, describing
+Tuthmosis I as destroyer of the Nubians, following the transcription
+of Sethe (1927), number 33 (pp. 87-88).
+</p>
+</header>
+<bibliography>
+<li>
+K. Sethe. <i>Urkunden der 18. Dynastie, Volume I</i>. Hinrichs,
+Leipzig, 1927.
+</li>
+</bibliography>
+<tier name="hieroglyphic" mode="shown"/>
+<tier name="transliteration" mode="ignored"/>
+<tier name="translation" mode="ignored"/>
+<tier name="lexical" mode="ignored"/>
+<segment>
+<texthi>
+<coord id="A1"/><note symbol="0">With
+crown.</note>[hlr]G5-serekh(E1-[sep=0.5]D40*C10a-[sep=0.5]U6*[sep=0.5]M17*[sep=0.5]M17)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="A2"/>[hlr]R8*F35-cartouche(N5:[sep=0.5]O29-[sep=0.5]L1*D28)-X8*S34
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="A3"/>[hlr]S29*(Aa1:D21)-A15-V31:N37-T14*N25
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="A4"/>[hlr]M17-Y5:N35-N5:Z1-A40a-U6-M17*[sep=0.5]M17
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B1"/><note symbol="0">With
+crown.</note>[hlr]G5*[fit](N6[scale=0.8]:.)-E1-D40-C10*[sep=0.5]U6-O33a
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B2"/>[hlr](M23:X1)*(L2:X1)-V30:N17:[sep=0.5]N17-cartouche(N5:[sep=0.5]O29-L1*D28)-X8*S34
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B3"/>[hlr]S38*[t]A40[ts]-D40-S29*V29-V31:D40-G21-V28*S29-insert[bs](A14a,Z1*[sep=0.5]Z1*[sep=0.5]Z1)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B4"/>[hlr]M17-Y5:N35-A40-V30-W11*W11:[size=inf]W11-.:N17:N17:.-U6-M17*[sep=0.5]M17
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="C1"/>[hlr]G16-N28-G17-N35:[sep=0.5]insert[bs](F20,D21)-X1-[sep=0.5]I13-D40[e]:[sep=0.5]F9*[sep=0.5]F9
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="C2"/>[hlr]R8*F35-V30:[sep=0.5]N17:N17-cartouche(N5:[sep=0.5]O29-L1-D28)-X8*S34
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="C3"/>[hlr]N35:N41-[sep=0.5]G17-A24-N16-D1[shade]*Q3:[sep=0.5]N17
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="C4"/>[hlr]Y5:[sep=0.5]N35:[sep=0.5]V13-G43-C17-[sep=0.5]V30*S40-(X1:O49)*U6-M17*[sep=0.5]M17
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="D1"/>[hlr]F35*[sep=0.5]G5:[sep=0.5]S12-M4*[sep=0.5]M4*[sep=0.5]M4-S29*S34-F34*F34:[fit,size=inf]F34
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="D2"/>[hlr]insert[te](G39,N5)-N35-F32:[sep=0.5]X1*Z1:[sep=0.5]I9-cartouche(G26*[sep=0.5]F31-[sep=0.5]O34-[sep=0.5]N28*[sep=0.5]N5*W19)-X8-S34
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="D3"/><note symbol="6">Uncertain.</note>[hlr]V30:N17-Aa32-G17-N17:Z1*N21[rotate=90]:[sep=0.5]N33*N33*N33-G17*Q1-X1:O1-V30
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="D4"/>[hlr]M17-Y5:N35-A40-V30-W11*[sep=0.5]W11:[size=inf]W11-.:N17:N17:.-U6-[sep=0.5]M17*[sep=0.5]M17
+</texthi>
+</segment>
+</egyptian>

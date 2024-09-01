@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<egyptian
+  creator="Mark-Jan Nederhof"
+  name="Sethe"
+  labelname="Se"
+  created="2018-07-10"
+  modified="2018-07-11"
+  version=""
+  scheme=""
+  language=""
+  upload=""
+  email=""
+  password=""
+>
+<header>
+<p>
+Transcription of a dedication of Tuthmosis I, in the temple of Amun in
+Karnak, following the transcription of Sethe (1927), number 37 (p.
+92).
+</p>
+</header>
+<bibliography>
+<li>
+K. Sethe. <i>Urkunden der 18. Dynastie, Volume I</i>. Hinrichs,
+Leipzig, 1927.
+</li>
+</bibliography>
+<tier name="hieroglyphic" mode="shown"/>
+<tier name="transliteration" mode="ignored"/>
+<tier name="translation" mode="ignored"/>
+<tier name="lexical" mode="ignored"/>
+<segment>
+<texthi>
+[hlr]![shade]S34*R8-F35*(V30![noshade]:N17:[sep=0.5]N17)-V30:[sep=0.5]D4:[sep=0.5]Aa1*[sep=0.5]X1-(M23:X1)*(L2:X1)-cartouche(N5:O29-[sep=0.5]L1*D28)-insert[te](G39,N5)-N35:[sep=0.3]F32:[sep=0.3]X1:[sep=0.2]I9-cartouche(G26-[sep=0.5]F31:[sep=0.5]O34-[sep=0.5]N28*[sep=0.5]N5*[sep=0.5]W19)-D4:[sep=0.5]N35:[sep=0.5]I9-G17-Y5:W24*[sep=0.5]W24*[sep=0.5]W24-I9-N35:[sep=0.5]X1:[sep=0.5]I9-M17*(Y5:[sep=0.5]N35:[sep=0.5]N5)-D2:[sep=0.5]D1-.:N17:N17:.-D4:X1-N35:I9-O28-[sep=0.5]O28-[sep=0.5]O28*(X1:O1)-A63*S29-[sep=0.5].:X1-O34-W4*X1-.:N17:N17:.-G17-F35*F35*F35-O34-D4:I9-X8*S34-insert[s](I10,X1:N17)
+</texthi>
+</segment>
+</egyptian>

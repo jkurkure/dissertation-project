@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<egyptian
+  creator="Mark-Jan Nederhof"
+  name="Sethe"
+  labelname="Se"
+  created="2018-07-09"
+  modified="2018-07-09"
+  version=""
+  scheme=""
+  language=""
+  upload=""
+  email=""
+  password=""
+>
+<header>
+<p>
+Transcription of three rock inscriptions at the first cataract,
+mentioning the return of Tuthmosis I from Nubia, following the
+transcription of Sethe (1927), number 34 (pp. 88-90).
+</p>
+</header>
+<bibliography>
+<li>
+K. Sethe. <i>Urkunden der 18. Dynastie, Volume I</i>. Hinrichs,
+Leipzig, 1927.
+</li>
+</bibliography>
+<tier name="hieroglyphic" mode="shown"/>
+<tier name="transliteration" mode="ignored"/>
+<tier name="translation" mode="ignored"/>
+<tier name="lexical" mode="ignored"/>
+<segment>
+<texthi>
+<coord id="A1"/>[hlr]M4[mirror]*(X1:zp)-Z15*Z15*Z15-N12:Z15-N37:[sep=0.5]N35:[sep=0.5]N35:[sep=0.5]N35-N5:V20*[sep=0.5]V20-Z15*Z15-Aa1:D21-U36*(Z1:N35)-G5-E1-[sep=0.5]A24-C10-[sep=0.5]U6
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="A2"/>[hlr]G16-N28:D36-G17-[sep=0.5]N35:[sep=0.5]O34:[sep=0.5]D21:[sep=0.5]X1-O29:[sep=0.5]F9*[sep=0.5]F9-G5-S12:[sep=0.5]N33:[sep=0.5]Z1*Z1*Z1-F35-M4*[sep=0.5]M4*[sep=0.5]M4-S29*S34-F34*[e]Z1[shade]:Z1*Z1*Z1
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="A3"/>[hlr](M23:X1)*(L2:X1)-[sep=0.5]cartouche(N5*[sep=0.5]O29a*[sep=0.5]L1-D28)-insert[te](G39,N5)-cartouche(G26-F31*[sep=0.5]S29)-insert[be,sep=0.6](insert[bs](F29[mirror],X1),X1)-V30:X1-W7-[sep=0.5]G43-U6*M17[shade]*[sep=0.5,shade]M17[shade]
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="A4"/>[hlr]D54*(Z7:X1)-U36*A40-I9-G17-(V31:N37)*T14-N25-(D2:Z1)*S29-Aa1:D21-A15-Aa1:[sep=0.5]I9:[sep=0.5]X1-A14a-![shade]Z1*Z1*Z1:I9
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B1"/>[hlr]G5-serekh(E1-[sep=0.5]D40*C10-[sep=0.5]U6)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B2"/>[hlr](M23:X1)*(L2:X1)-cartouche(N5:[sep=0.5]O29-[sep=0.5]L1*[sep=0.5]D28)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B3"/>[hlr]insert[te](G39,N5)-cartouche(G26-F31*S29)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B4"/>[hlr]X8*S34-insert[bs](I10,X1:N17)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B5"/>[hlr]M4*(X1:O50)-Z15*[sep=0.5]Z15*[sep=0.5]Z15-N12:Z1-N37:[sep=0.5]N35:[sep=0.5]N35:[sep=0.5]N35-N5:V20*[sep=0.5]V20-Z15*[sep=0.5]Z15-N35:D36-(X1:P1)*U36-Z1:I9-N36:Z1-[sep=0.5]Q3:N35-G17
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B6"/>[hlr]A24-G17*[sep=0.5]F12-G17-[sep=0.5]D54*G43-X1:I9-D2*S29-Aa1:D21-X1:[sep=0.5]A15-V31:N37-N25-F32:O34-X1
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="B7"/>[hlr]M23-insert[t](G39,Z1)-X1*[sep=0.5]G43-D21:Z1
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="C1"/>[hlr]M4-[sep=0.5](X1:O50)*Z15*[sep=0.5]Z15*[sep=0.5]Z15-N12:Z1-N37:[sep=0.5]N35:[sep=0.5,fit]N35:[sep=0.5]N35-N5:V20*[sep=0.5]V20-Z15*[sep=0.5]Z15-Aa1:D21-U36*(Z1:N35)
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="C2"/>[hlr](M23:X1)*(L2:X1)-cartouche(N5*O29a-L1-D28)-X8*S34-V25*G43-U36*(Z1:I9)-M8-D46:[sep=0.5]D40
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="C3"/>[hlr]N36:Z1-Q3:N35-G17-M3:Aa1*[sep=0.5]X1-G28-G17-X1:I9-M23*[sep=0.5]G43-![shade]T25*D58
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="C4"/>[hlr]O36-G17*M17-N35:D21-O39:Z1*Z1*Z1-D35-O34[shade]-Aa28[b]*[b](D46:[sep=0.5]![shade]P1)-N35-D46:[sep=0.5]Q3*[sep=0.5]X1-P1-[sep=0.5]D2:D21-I9-![shade]Aa1:D46-P1
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="C5"/>[hlr]N35:[sep=0.5]I9-D2:D21-I9-F34*Z1:[sep=0.5]I9-![shade]F40-G43-![shade]S29*[sep=0.5](U1:[sep=0.5]T31)-N35:I9-Aa1*[sep=0.5]X1:I9-[sep=0.5]A14a-(Z1:[sep=0.5]Z1:[sep=0.5]Z1)*I9
+</texthi>
+</segment>
+
+<segment>
+<texthi>
+<coord id="C6"/>[hlr]M23-insert[t](G39,Z1)-![shade]X1-[sep=0.5]G43-D21:Z1
+</texthi>
+</segment>
+</egyptian>

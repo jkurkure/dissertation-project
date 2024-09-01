@@ -1,0 +1,346 @@
+script(src="/resconcat/res_concat.js")
+
+h3
+   i(id="info")
+
+div#nav
+   table(id="books")
+   table(id="kings")
+
+
+div#error-results(class="hidden")
+   h2 Errors
+   textarea(id="error-text", rows="10", cols="50", readonly="readonly")
+div#parse-results(class="hidden")
+   h2 Transcript
+   ol#outputs
+
+script.
+   window.onresize = function(){ location.href = "#{currentURL}/"; };
+   localStorage.setItem("text-url", "#{textUrl}");
+   var xmlhttp = new window.XMLHttpRequest();
+   xmlhttp.open("GET", localStorage.getItem("text-url"), true);
+   xmlhttp.send(null);
+   xmlhttp.onreadystatechange = callbackFunction;
+   const RESOURCE_LOADING_TIME = 1000;
+
+   function callbackFunction() {
+      if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+         var response = xmlhttp.responseText;
+         var parser = new DOMParser();
+         var xmlDoc = parser.parseFromString(response, "text/xml");
+         var corpus_type = xmlDoc.getElementsByTagName("text")[0].getAttribute("description");
+         document.getElementById("info").innerHTML = corpus_type;
+         //check if hiero is included in the corpus type
+         localStorage.setItem("hiero", corpus_type.includes("hiero"));
+         let reslinks = xmlDoc.getElementsByTagName("resource");
+         for (let i = 0; i < reslinks.length; i++) {
+            if (reslinks[i].getAttribute("location").includes("Hi")) {
+               localStorage.setItem("hieroURL", reslinks[i].getAttribute("location").replace("..", "https://raw.githubusercontent.com/jkurkure/jkurkure.github.io/develop/corpus"));
+            }
+         }
+
+         //populate table with information of books
+         var books = document.getElementById("books");
+         books.innerHTML = "<tr><th>Books</th></tr>";
+         var data = xmlDoc.getElementsByTagName("collection");
+
+         //loop through data to find all tags with attribute kind="book"
+         for (var i = 0; i < data.length; i++) {
+            if (data[i].getAttribute("kind") == "books") {
+               var row = books.insertRow(1);
+               var cell = row.insertCell(0);
+               cell.innerHTML = data[i].getAttribute("collect");
+            }
+         }
+
+         //populate table with information of kings
+         var kings = document.getElementById("kings");
+
+         kings.innerHTML = "<tr><th>Kings</th></tr>";
+         var data = xmlDoc.getElementsByTagName("collection");
+         
+         //loop through data to find all tags with attribute kind="king"
+         for (var i = 0; i < data.length; i++) {
+            if (data[i].getAttribute("kind") == "kings") {
+               var row = kings.insertRow(1);
+               var cell = row.insertCell(0);
+               cell.innerHTML = data[i].getAttribute("collect");
+            }
+         }
+      }
+   }
+
+br
+br
+
+div(id="text-box", style="width: 75%; margin: 0 auto;")
+   table(id="text")
+
+div(id="footy")
+
+script.
+   let data = !{ JSON.stringify(data) };
+         const textDis = document.getElementById('text');
+         const dataArray = data["data"];
+         let tableRows = "";
+         for (let i = 0; i < dataArray.length; i++) {
+            if (dataArray[i].match(/^\s*$/)) {
+               tableRows += "<tr hidden><td>" + dataArray[i] + "</td></tr>";
+            }
+            else {
+               if (i%2 == 1) {
+                  tableRows += "<tr><td>" + dataArray[i] + "</td></tr>";
+               }
+               else {
+                  if (localStorage.getItem("hiero")) {
+                     tableRows += "<tr><td><hil></hil><br />" + dataArray[i] + "</td></tr>";
+                  }
+                  else {
+                     tableRows += "<tr><td>" + dataArray[i] + "</td></tr>";
+                  }
+               }
+            }
+         }
+         //tableRows = tableRows.replace(/(<\/?hi>|<\/?note>)/g, match => match + ' '.repeat(match.length));
+         var regex = /<(\d+)>/g; // Regular expression to match <n> where n is a number
+         var replacement = '<span style="color:red"><sub>$1</sub>｜ </span>'; // Replace with <span class="red-text"><n></span>
+         tableRows = tableRows.replace(regex, replacement);
+         textDis.innerHTML = tableRows;
+
+         const footnotes = document.getElementById('footy');
+         const noteArray = data["foot"];
+         let chits = "";
+         for (let i = 0; i < noteArray.length; i++){
+            chits += "<p><sup>" + i + "</sup> " + noteArray[i] + "</p>";
+         }
+         chits += "<p><note>The average line utilization is " + data["utilised"] + "%</note></p>";
+         footnotes.innerHTML = chits;
+         
+         
+
+   //foreign tier hieroglyphs rendering
+   let inline_hiero = document.getElementsByTagName("hi");
+   console.log(inline_hiero);
+   for (let i = 0; i < inline_hiero.length; i++) {
+      inline_hiero[i].innerHTML = "&#" + uniGlyphs[inline_hiero[i].innerHTML.trim()] + ";" + " ".repeat(inline_hiero[i].innerHTML.length - inline_hiero[i].innerHTML.trim().length);
+   }
+   console.log(inline_hiero);
+
+
+script.
+   // get document coordinates of the element
+   function getCoords(elem) {
+   let box = elem.getBoundingClientRect();
+
+   return {
+      top: box.top + window.pageYOffset,
+      right: box.right + window.pageXOffset,
+      bottom: box.bottom + window.pageYOffset,
+      left: box.left + window.pageXOffset
+   };
+   }
+   function alignAnchors() {
+      //get list of tr elements
+      var trs = document.querySelectorAll('table#text tr');
+      //loop through tr elements
+      for (var i = 0; i < trs.length; i+=2) {
+         console.log(trs[i].innerHTML);
+         //get all <sub> elements
+         var anchors = trs[i].getElementsByTagName("span");
+         var anchors1 = trs[i+1].getElementsByTagName("span");
+         //loop through <sub> elements
+         for (var j = 0; j < anchors.length; j++) {
+            //get the text of the <sub> element
+            var subText = anchors[j].innerHTML;
+            //check if the next tr element contains a <sub> element with the same text
+            for (var k = 0; k < anchors.length; k++) {
+            if (anchors1[k] && anchors1[k].innerHTML == subText) {
+               let coords = getCoords(anchors[j]);
+               let coords1 = getCoords(anchors1[k]);
+
+               if (coords.left < coords1.left && anchors[j].style.marginLeft == "") {
+                  anchors[j].style.marginLeft = (coords1.left - coords.left) + "px";
+               }
+
+               else if (coords1.left < coords.left && anchors1[k].style.marginLeft == ""){
+                  anchors1[k].style.marginLeft = (coords.left - coords1.left) + "px";
+               }
+            }
+            }
+         }
+
+      }
+   }
+
+   function insertHiero() {
+      if (localStorage.getItem("hiero")){
+         var xmlhttp = new window.XMLHttpRequest();
+         console.log(localStorage.getItem("hieroURL"))
+         xmlhttp.open("GET", localStorage.getItem("hieroURL"), true);
+         xmlhttp.send(null);
+         xmlhttp.onreadystatechange = callbackFunction1;
+
+         function callbackFunction1() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+               var response = xmlhttp.responseText;
+               var parser = new DOMParser();
+               var xmlDoc = parser.parseFromString(response, "text/xml");
+
+               let hi_lines = xmlDoc.getElementsByTagName("texthi");
+               let hi_lines_raw = [];
+               
+               for (var i = 0; i < hi_lines.length; i++) {
+                  let hi_line = hi_lines[i];
+                  let valign = hi_line.getElementsByTagName("coord")[0].getAttribute("id");
+                  
+                  var trs = document.getElementsByTagName("tr");
+                  for (var j = 0; j < trs.length; j+=2) {
+                     var anchors = trs[j].getElementsByTagName("span");
+                     for (var k = 0; k < anchors.length; k++) {
+                        if (anchors[k].textContent.match(/(\d+)/)[0] == valign) {
+                           let coords = getCoords(anchors[k]);
+                           trs[j].getElementsByTagName("hil")[0].innerHTML += '<span style="color:red"><sub>' + valign + '</sub>｜ </span>' + hi_line.innerHTML;
+                           k = 1000000000;
+                           j = 1000000000;
+                        }
+                     }
+                  }
+               }
+               let hils = document.querySelectorAll('hil coord');
+               let notes = [];
+               for (let i = 0; i < hils.length; i++) {
+                  let notes_tier = hils[i].querySelectorAll('note');
+                  for (let j = 0; j < notes_tier.length; j++) {
+                     notes.push(hils[i].removeChild(notes_tier[j]));
+                  }
+                  const fontsize = parseInt(getComputedStyle(hils[i]).fontSize);
+                  const frag = hils[i].textContent;
+                  const part = new ResTierPart(frag, fontsize);
+                  console.log(part);
+               }
+               //- processRaw(hi_lines_raw);
+            }
+         }
+      }
+   }
+
+   let hi_records = {};
+
+   function sizeCheck () {
+      let hieros = document.querySelectorAll('#outputs li');
+      for (let i = 0; i < hieros.length; i++) {
+         let frags = hieros[i].querySelectorAll('span.hierojax');
+         hi_records[i+1] = [];
+         for (let j = 0; j < frags.length; j++) {
+            hi_records[i+1].push(frags[j].innerHTML);
+         }
+      }
+   }
+
+   let hieroInsert = () => {
+      let slots = document.getElementsByTagName('coord');
+      for (let i = 0; i < slots.length; i++) {
+         let frags = "";
+         for (let j = 0; j < hi_records[i+1].length; j++) {
+            frags += "<frag>" + hi_records[i+1][j] + "</frag>";
+         }
+         slots[i].innerHTML = frags;
+      }   
+   }
+
+   let hieroAlign = () => {
+      document.getElementById('parse-results').style.display = 'none';
+
+      //get list of every other tr element
+      var trs = document.querySelectorAll("table#text tr");
+      //loop through tr elements
+      for (var i = 0; i < trs.length; i+=2) {
+         var hi_anchors = trs[i].querySelectorAll("hil span");
+         var tr_anchors = trs[i].querySelectorAll("span"); 
+         
+         for (var j = 0; j < hi_anchors.length; j++) {
+            var hi_anchor = hi_anchors[j];
+            var hi_text = hi_anchor.innerHTML;
+            for (var k = 0; k < tr_anchors.length; k++) {
+               var tr_anchor = tr_anchors[k];
+               var tr_text = tr_anchor.innerHTML;
+               if (hi_text == tr_text) {
+                  let coords = getCoords(hi_anchor);
+                  let coords1 = getCoords(tr_anchor);
+                  if (coords.left < coords1.left && hi_anchor.style.marginLeft == "") {
+                     hi_anchor.style.marginLeft = (coords1.left - coords.left) + "px";
+                  }
+                  else if (coords1.left < coords.left && tr_anchor.style.marginLeft == ""){
+                     tr_anchor.style.marginLeft = (coords.left - coords1.left) + "px";
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   let hieroBreak = () => {
+      //find all hieroglyphic lines that are wrapped
+      let trs = document.querySelectorAll('table#text tr');
+      for (let i = 0; i < trs.length; i+=2) {
+         //calculate the total width of all child elements and compare to the width of the parent element
+         let hieroLn = trs[i].querySelector('hil');
+         //- if (hieroLn.getClientRects().length<=1) {
+         //-    continue;
+         //- }
+         //- hieroLn.style.whiteSpace = "nowrap";
+         //- let contentWidth = hieroLn.getBoundingClientRect().width;
+         //- hieroLn.style.whiteSpace = "normal";
+         //- let fitWidth = hieroLn.getBoundingClientRect().width;
+         //- let difference = contentWidth - fitWidth;
+
+         let brokenFrags = "";
+         let lastChild = hieroLn.querySelectorAll("svg")[hieroLn.querySelectorAll("svg").length - 1];
+         let oldWidth = lastChild.getAttribute("width");
+         while (hieroLn.getClientRects().length>1) {
+            brokenFrags += lastChild.removeChild(lastChild.lastChild).outerHTML;
+            lastChild.setAttribute("width", lastChild.getBBox().width);
+         }
+         if (brokenFrags.length > 0) {
+            let nextLine = trs[i+2].querySelector('hil');
+            console.log(brokenFrags);
+            let insertSeg = "<frag><svg>" + brokenFrags + "</svg></frag>";
+            nextLine.innerHTML = insertSeg + nextLine.innerHTML;
+            let fragImg = nextLine.querySelector("svg");
+            fragImg.setAttribute("width", oldWidth - lastChild.getAttribute("width"));
+            fragImg.setAttribute("height", lastChild.getAttribute("height"));
+            fragImg.setAttribute("viewBox", lastChild.getAttribute("width") + " 0 " + " " + fragImg.getAttribute("width") + " " + fragImg.getAttribute("height "));
+         }
+      }
+   }
+
+   function postProcess() {
+      alignAnchors();
+      insertHiero();
+      hierojax.processFragments();
+      
+      //run each function sequentially
+       new Promise((res, rej) => {
+         setTimeout(res, RESOURCE_LOADING_TIME);
+      }).then((res) => {
+         sizeCheck();
+      }).then((res) => {
+         hieroInsert();
+      });
+      new Promise((res, rej) => {
+         setTimeout(res, RESOURCE_LOADING_TIME);
+      }).then((res) => {
+         hieroAlign();
+      }).then((res) => {
+         hieroBreak();
+      });   
+
+   }
+
+   window.onload = postProcess;
+
+
+
+link(rel='stylesheet', href='/stylesheets/texts.css')
+link(rel='stylesheet', href='/hierojax/hierojax.css')
